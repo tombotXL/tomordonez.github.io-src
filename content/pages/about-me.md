@@ -7,16 +7,22 @@ I am Tom Ordonez.
 
 ![Tom Ordonez]({filename}/images/tomordonez.jpg)
 
-I am a Product Developer.
+I took Neural Networks before it was hot. Worked in a signal processing lab with other mad scientists. Wrote code in Java. Managed engineering projects. Managed marketing projects. Built websites and apps. I have been to CES, Pycon, Rubyconf, Sourcecon and other large conferences. I spend most of my free time drinking tea and learning tech.
 
-I am a Software Engineer.
+Inspired by the Open Source Data Science Masters by Clare Corthell. I am taking my own MS in Data Science using Coursera, Udemy, books, Stackoverflow and open source tools.
 
-I am a Growth Hacker.
+My current tools are: Fedora Linux, R, Octave, Python, PostgreSQL, AWS, Tableau.
 
-I am a Talent Sourcerer.
+## I am following this iterative process:
 
-I am a Musician.
+**Input**: Get data, process data
+**Engine**: Analysis, modeling, development
+**Output**: Prototype, report, loop.
 
-I am a Craft Brewer.
+This website is now focused on my quest to conquer data science.
 
-Contact me at: tomordonezworks - gmail
+## Contact me at: tomordonezworks - gmail if
+
+* You are looking for old content. I removed all old content and started this site from zero. Email me if you are looking for my old content.
+* You would like to learn more about my data science quest.
+* You would like to connect about anything :)
