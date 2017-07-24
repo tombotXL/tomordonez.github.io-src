@@ -59,6 +59,7 @@ DEFAULT_METADATA = {
 
 # Theme settings
 THEME = 'themes/pelican-alchemy/alchemy'
+CSS_FILE = 'style.css'
 
 PLUGIN_PATHS = [
     'pelican-plugins'
