@@ -264,6 +264,5 @@ You will get a file with emails:
 
 ![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-emails.jpg)
 
-If you have any questions please send me a message on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>.
-<p>&nbsp;</p>
-
+## Connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>
+![Find me on Linkedin Tom Ordonez]({filename}/images/contact-tomordonez-linkedin.gif)

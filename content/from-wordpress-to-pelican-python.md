@@ -20,3 +20,6 @@ I initially thought of rebuilding my website from scratch using Python and Djang
 Instead I decided on a static generator based on Python. I asked suggestions from my Linkedin network and a few people suggested Pelican.
 
 This is Pelican on Github pages.
+
+## If you have questions or comments please add them below
+![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)

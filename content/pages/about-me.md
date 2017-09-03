@@ -28,16 +28,5 @@ Inspired by the Open Source Data Science Masters by Clare Corthell. I am taking 
 
 This website is now focused on my quest to conquer data science.
 
-## Follow my quest to conquer data science
-
-Sign up to my newsletter to learn more about my quest to conquer data science. I will send you a weekly newsletter with things I have been learning.
-<p>&nbsp;</p>
-<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:200px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
-<p>&nbsp;</p>
-## You can also contact me here:
-
-Send me an email to: tomordonezworks - gmail.
-
-* If you are looking for old content. I removed all old content and started this site from zero.
-* If you are in Miami and want to hang out.
-* If you would like to connect about anything :)
+## Connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>
+![Find me on Linkedin Tom Ordonez]({filename}/images/contact-tomordonez-linkedin.gif)

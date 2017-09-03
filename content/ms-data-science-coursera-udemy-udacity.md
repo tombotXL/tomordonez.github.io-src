@@ -176,3 +176,6 @@ In 6 months I might sign up for:
 I started R and Python at the same time and this was too time consuming. R required a lot of data science concepts that I haven't studied. While Python's learning curve was easier. I decided to focus on data science using Python.
 
 I implemented Python scripts in the past and this website is built using Python. I wanted to focus on building solid foundations before moving onto more heavy stuff.
+
+## If you have questions or comments please add them below
+![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)

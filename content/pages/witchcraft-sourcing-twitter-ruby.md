@@ -258,6 +258,5 @@ These are some of the columns from the CSV file:
 * Data mining
 * Create a data warehouse
 
-If you have any questions please send me a message on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>.
-<p>&nbsp;</p>
-
+## Connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>
+![Find me on Linkedin Tom Ordonez]({filename}/images/contact-tomordonez-linkedin.gif)
