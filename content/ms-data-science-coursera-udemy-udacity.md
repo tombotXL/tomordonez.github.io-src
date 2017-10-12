@@ -122,7 +122,7 @@ This will be the hard part. Programming is not hard to learn. But math is compli
 
 I think I am strong here. I don't have business domain in every subject. But I have many years working on business development using the lean startup and I know how to identify problems and solutions.
 
-I signed up for these Coursera paths:
+I signed up for this Coursera path:
 
 ## Python for Everybody from University of Michigan
 
@@ -133,21 +133,6 @@ This class has 4 courses:
 * Using Python to access web data
 * Using databases with Python
 * Retrieving, processing and visualizing data
-
-## Data Science Specialization from Johns Hopkins University
-
-This specialization has a lot of courses:
-
-1. The data scientist's toolbox
-2. R programming
-3. Getting and cleaning data
-4. Exploratory data analysis
-5. Reproducible research
-6. Statistial inference
-7. Regression models
-8. Practical machine learning
-9. Developing data products
-10. Data science capstone
 
 Later on I might take these
 
@@ -165,17 +150,6 @@ Udemy:
 In 6 months I might sign up for:
 
 * Udacity Data Analyst Nanodegree
-
-## I am currently taking these 2:
-
-* Intro to Python
-* R programming
-
-**Update 9/1/17**
-
-I started R and Python at the same time and this was too time consuming. R required a lot of data science concepts that I haven't studied. While Python's learning curve was easier. I decided to focus on data science using Python.
-
-I implemented Python scripts in the past and this website is built using Python. I wanted to focus on building solid foundations before moving onto more heavy stuff.
 
 ## If you have questions or comments please add them below
 ![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)

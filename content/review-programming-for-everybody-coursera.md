@@ -47,27 +47,7 @@ If you don't have previous knowledge of programming I suggest that you take each
 
 Here is a Python example related to programming for everybody.
 
-I have been buying a few things from <a href="https://www.shopyourway.com" target="_blank">Shop Your Way</a>.
-
-Mostly related to tools for DIY things around the house.
-
-A <a href="https://www.shopyourway.com/craftsman-home-series-26-wide-5-drawer-rolling-cabinet-red/323664575" target="_blank">Craftsman cabinet</a>. Which I am using to store my music and computer stuff.
-
-![Software Craftsman-ship]({filename}/images/craftsman-cabinet-shopyourway.jpg)
-
-I got a <a href="https://www.shopyourway.com/craftsman-30438-16-electric-corded-grass-trimmer/397281876" target="_blank">Craftsman electric trimmer</a> to cut the jungle-like grass from my patio.
-
-![Craftsman Electric Trimmer]({filename}/images/craftsman-electric-trimmer-shopyourway.jpg)
-
-When I used the trimmer I realized that it blew grass and sand really hard. Although I used sun glasses they were not good enough to protect my face. The machine also vibrated a lot. I guess I am not used to this kind of work :)
-
-I got a few more things:
-
-I got <a href="https://www.shopyourway.com/dewalt-router-safety-glass-with-clear-lens/156331544" target="_blank">safety glasses</a>.
-
-And also <a href="https://www.shopyourway.com/craftsman-utility-gloves-large/21815380" target="_blank">utility gloves</a>.
-
-Let's write a silly program that asks for the prices of these items and it calculates the total, the lowest and highest price.
+Let's write a silly program that asks for the prices of items and calculate the total, the lowest and highest price.
 
 Also print an error when you don't enter a number and finish when you enter the word "batman".
 
