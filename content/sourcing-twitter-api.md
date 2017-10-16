@@ -272,7 +272,7 @@ Open VirtualBox and start the Ubuntu virtual machine.
 
 Open the terminal.
 
-Follow this guideline to <a href="https://www.tomordonez.com/installing-ruby-on-ubuntu/" target="_blank">Install Ruby on Ubuntu</a>.
+Follow this guideline to <a href="https://www.tomordonez.com/installing-ruby-on-ubuntu.html" target="_blank">Install Ruby on Ubuntu</a>.
 
 ## Ruby on Mac
 
