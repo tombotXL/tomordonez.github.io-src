@@ -45,99 +45,6 @@ This requires:
 * Bash scripting knowledge.
 * A lot of confidence and attention to detail
 
-## Playing the Twitter game
-
-The Twitter game has a few simple rules:
-
-* I follow you. You follow me.
-* Tweet often.
-* Build relationships with mentions, favorites, retweets and direct messages.
-* Create groups of people using lists.
-
-
-## If I follow you. Will you follow me?
-
-If the other person doesn't understand the Twitter game. They won't follow you.
-
-Maybe the follow you and one day they unfollowed you. Why? Why????
-
-Why would people stop following you on Twitter?
-
-* You tweeted something too cute
-* You tweeted something not cute
-* They woke up in a bad mood
-* Their dog unfollowed you
-
-
-## A general understanding about how computers work
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/LkqiDu1BQXY?rel=0&amp;controls=0&amp;showinfo=0&amp;t=1m7s" frameborder="0" allowfullscreen></iframe>
-
-Computer. Computer!
-
-(the computer doesn't answer. He tries with the mouse)
-
-Hello computer.
-
-(still nothing happens)
-
-Just use the keyboard!
-
-## Layers of abstraction
-
-This is a computer science concept that explains the interaction between the human and the machine.
-
-Have you tried to fix a computer? Maybe. Maybe not.
-
-Probably you know that inside the computer you will find a circuit board with electronic components.
-
-A motherboard with a processor. RAM memory. Wireless circuit card. Hard drive. Battery and other components.
-
-These components only understand 1s and 0s.
-
-But you. The human. You only understand English.
-
-You communicate with the computer through "layers of abstraction".
-
-1s and 0s are very abstract. If you don't know about binary numbers. This layer is difficult to understand.
-
-A layer above this is "machine code".
-
-Machine code looks sort of like this:
-
-    0x51a12
-    0x51a20
-    0x519fe
-
-Still very abstract.
-
-A layer above this looks like this:
-
-    while (fahr <= upper) {
-      celsius = (5.0/9.0) * (fahr-32.0);
-      printf("%3.0f %6.1f\n", fahr, celsius);
-      fahr = fahr + step;
-      }
-
-Less abstract right? It starts to look like some sort of math.
-
-A layer above this looks like this:
-
-    File.readlines('file.txt').each do |line|
-      puts line
-    end
-
-It starts to look more like English.
-
-One more layer above this is typing "instructions" to a program like Excel or Word or Gmail.
-
-For this tutorial we need to talk at this level:
-
-    File.readlines('file.txt').each do |line|
-      puts line
-    end
-
-While you don't have to become a programmer. You can get away with just learning a little bit of code.
 
 ## You need to have a Twitter account
 
@@ -153,6 +60,10 @@ Sign-in using your Twitter account.
 Click on Create New App.
 
 Fill out the form.
+
+* Name of the app
+* Description
+* Website, including `http://`
 
 Go to Permissions and set Access to "Read, Write and Access direct messages"
 
@@ -242,29 +153,8 @@ There are a lot more "commands" that you can use to communicate with the compute
 
 Ruby is a "high level programming language" that reads sort of like English.
 
-Ruby has "modules" called "Gems" that adds more functionality to a program.
+Ruby has "modules" called "Gems" that add more functionality to a program.
 
-For instance if you are developing a web app that requires a login authentication. There is already a Ruby gem for login authentication that's (almost) plug and play. That way you don't have to build this feature from scratch.
-
-Ruby gems are open source and most are supported by the open source community. Some are also supported by organizations.
-
-Ruby and Ruby gems are constantly updated and they work together to create a functional application.
-
-Ruby is supported by a core team. Some Ruby gems are also supported by this team. But many other Gems are supported by other developers of the open source community.
-
-This creates a challenge.
-
-Similar to the way that Windows works. Excel 98 worked with Windows 98. As Windows kept updating the operating system then other programs had to be properly maintained to work properly with Windows. Excel 98 won't work with Windows 7.
-
-Something similar happens with Ruby and many other programming languages.
-
-There is a gem called `oauth` that add authentication functionality to a Ruby application.
-
-The version I have installed is `0.4.7`.
-
-While the Ruby version I have is `2.3.0`
-
-If the Ruby core team decides to launch version `3.0.0` then `oauth` might stop working. Unless the `oauth` team makes sure that the gem is updated and works with such version of Ruby.
 
 ## Ruby on Windows with Linux Virtual Machine
 
@@ -291,7 +181,37 @@ Previously you created an app on Twitter. We need to authenticate this app with 
 
     $ t authorize
 
-This will send you to an URL to authorize the application that you previously created on Twitter.
+This will say:
+
+    Welcome!...
+    1. Sign in to Twitter..."create a new app"
+    2. Complete the required fields...
+    3. Go to Permissions tab...
+    4. Go to the Keys and Access Tokens tab...
+
+    Press Enter to open the Twitter Developer site
+
+When you hit enter then:
+
+* Firefox opens Twitter Application Management
+* The terminal says Enter API Key
+
+Open the app that you created:
+
+* Go to permissions tab
+* Go to Keys and access tokens
+
+Copy/paste those into the Terminal.
+
+Then that opens a site that says "Authorize App".
+
+Then it gives you a pin number that you have to enter in the Terminal.
+
+If it works, it will say:
+
+    Authorization successful
+
+
 
 ## Input and Output to send data
 

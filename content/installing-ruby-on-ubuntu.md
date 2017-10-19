@@ -17,16 +17,57 @@ As seen on <a href="http://rvm.io/" target="_blank">RVM</a>
 
 Go to the terminal in Ubuntu.
 
-Add the public key from RVM
-
-    $ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-    $ \curl -sSL https://get.rvm.io | bash -s stable
-
 On the Terminal go to the `Menu/Edit/Profile Preferences/Title` and Command.
 
 Check `Run command as a login shell`.
 
 Close the Terminal and start a new one.
+
+Add the public key from RVM
+
+    $ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+Then run this command to install RVM
+
+    $ \curl -sSL https://get.rvm.io | bash -s stable
+
+If the result says "GPG signature verification failed". It says to "try to install GPG v2 and then fetch the public key":
+
+    $ gpg2 --recv-keys string-letters-numbers
+
+Above copy/paste the corresponding string that is shown on your terminal.
+
+If that still doesn't work it will say:
+
+    gpg: keyserver receive failed: No keyserver available
+
+The next troubleshooting is to enter this:
+
+    $ command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+
+If that works it should say something like:
+
+    gpg: starting migration...
+    gpg: porting secret keys
+    gpg: migration succeeded
+    gpg: key...public key...
+    gpg: Total number processed: 1
+    gpg: ....imported: 1
+
+Then run the command again to install RVM:
+
+    $ \curl -sSL https://get.rvm.io | bash -s stable
+
+If it works it should say something like:
+
+    Installing RVM to /home...
+    Adding RVM PATH line to ...
+    Adding rvm loading line to ...
+    * To start using RVM you need...
+
+Close the terminal and open it again.
+
+    $ source ~/.rvm/scripts/rvm
 
     $ type rvm | head -n 1
 
