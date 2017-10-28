@@ -143,7 +143,11 @@ I recommend that you customize the data that you want extracted to your own need
 
 There is another way to install ResumeParser but the "legacy" source files are not found on the author's Github project anymore.
 
-Follow the same process to download the project:
+Follow the same process to download the project.
+
+If you are on Ubuntu and you haven't installed git:
+
+    $ sudo apt install git
 
 Git clone ResumeParser:
 
@@ -175,6 +179,12 @@ Clone the file `ResumeChecker.py` from here:
 
     (env) $ git clone https://gist.github.com/bb222f8b39f246d9add0644192e274e1.git
 
+This will create a directory called `bb222f8b39f246d9add0644192e274e1` and inside there is a file called `ResumeChecker.py`.
+
+You need to move this file into the `bin` directory.
+
+    (env) $ mv bb222f8b39f246d9add0644192e274e1/ResumeChecker.py bin/
+
 Install the dependencies:
 
     (env) $ pip install -r requirements.txt
@@ -188,7 +198,7 @@ Add resumes to this input directory. Although this directory comes with some def
 To run the code do:
 
     $ cd bin/
-    $ python ResumeChecker.py --data_path ../data/input/example_resumes --output_path ../data/output/resumes_summary.csv
+    $ python ResumeChecker.py --data_path ../data/input/example_resumes --output_path ../data/output/resume_summary.csv
 
 Open the CSV file in this directory:
 
@@ -204,15 +214,15 @@ The process is to add columns on the CSV for the keywords you want to extract. T
     Elon Musk      2          10              3
     Homer Simpson  1           2              1
 
-1. Create a list of the keywords that you want to add. This can be any number of keywords.
+Create a list of the keywords that you want to add. This can be any number of keywords.
 
-2. Add those keywords as columns on the CSV file here:
+Add those keywords as columns on the CSV file here:
 
     data/output/resume_summary.csv
 
-3. Open the file ResumeChecker.py.
+Open the file ResumeChecker.py.
 
-4. Towards the bottom of the file there is code that looks like this:
+Towards the bottom of the file there is code that looks like this:
 
     resume_summary_df["file_path"] = file_list
 
@@ -220,11 +230,11 @@ Find the rows that start with:
 
     resume_summary_df
 
-5. Scroll down a little bit more and find a section that starts with:
+Scroll down a little bit more and find a section that starts with:
 
-    # Scrape skill information
+    Scrape skill information
 
-6. Follow the format to add the keywords you want. Adding rows with the exact keywords you added on your CSV.
+Follow the format to add the keywords you want. Adding rows with the exact keywords you added on your CSV.
 
 For example, if you added `Machine Learning`. Then you could add a row like this:
 
@@ -313,21 +323,14 @@ It will show help options:
 
 omniprompt keys:
 
-  n, p                  fetch the next or previous set of search results
-
-  index                 open the result corresponding to index in browser
-
-  f                     jump to the first page
-
-  o                     open the current search in browser
-
-  g keywords            initiate a new Google search for 'keywords' with original options
-
-  q, ^D, double Enter   exit googler
-
-  ?                     show omniprompt help
-
-  *                     any other string initiates a new search with original options
+* n, p                  fetch the next or previous set of search results
+* index                 open the result corresponding to index in browser
+* f                     jump to the first page
+* o                     open the current search in browser
+* g keywords            initiate a new Google search for 'keywords' with original options
+* q, ^D, double Enter   exit googler
+* ?                     show omniprompt help
+* \*                     any other string initiates a new search with original options
 
 Type:
 
@@ -375,15 +378,11 @@ Open the help options:
 
  optional arguments:
 
- -h, --help  show this help message and exit
-
- -u URL      Type the URL which will be analyzed
-
- -o          Show only the "HTTP 200" status code
-
- -sb         Search in Bing indexed Disallows
-
- -f FILE     Scan a list of domains from a list
+* -h, --help  show this help message and exit
+* -u URL      Type the URL which will be analyzed
+* -o          Show only the "HTTP 200" status code
+* -sb         Search in Bing indexed Disallows
+* -f FILE     Scan a list of domains from a list
 
 Run an example:
 
