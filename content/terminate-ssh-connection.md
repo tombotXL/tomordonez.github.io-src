@@ -16,6 +16,8 @@ I always end up in <a href="https://apple.stackexchange.com/questions/35524/what
 
 Type `Enter`, `~` and then `.` period.
 
+This also works if you `vim` or `nano` a file and you come back to the shell and seems to be stuck. Typing this combination will exit.
+
 
 ## If you have questions or comments please add them below
 
