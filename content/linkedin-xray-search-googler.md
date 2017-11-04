@@ -29,7 +29,12 @@ Requires Python 3.3 or later
 
     $ git clone https://github.com/jarun/googler/
     $ cd googler
-    
+
+## Video Tutorial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KVMYBM2-DOs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
 ## Running googler
 
 It runs as a standalone program
