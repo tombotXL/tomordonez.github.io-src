@@ -248,9 +248,9 @@ For the `Rules-User`:
                 "replace": "",
                 "greedy": true
             },
-            // remove 2 empty lines
-            "linkedin_url_remove_two_empty_lines": {
-                "find": "\\n\\n",
+            // remove empty lines
+            "linkedin_url_remove_empty_lines": {
+                "find": "^\\n",
                 "replace": "",
                 "greedy": true
             },
@@ -270,9 +270,9 @@ For the `Commands-User`
             "caption": "Reg Replace: Googler Linkedin CSV",
             "command": "reg_replace",
             "args": {"replacements": ["linkedin_url_replace_comma",
-            "linkedin_url_two_lines","linkedin_url_join_url_city",
+            "linkedin_url_3_lines","linkedin_url_join_url_city",
             "linkedin_url_join_name_url","linkedin_url_leading_number",
-            "linkedin_url_remove_two_empty_lines",
+            "linkedin_url_remove_empty_lines",
             "linkedin_url_remove_googler_line"]}
         }
     ]
