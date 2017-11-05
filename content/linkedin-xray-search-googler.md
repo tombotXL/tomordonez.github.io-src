@@ -37,11 +37,11 @@ Requires Python 3.3 or later
 
 ## Running googler
 
-It runs as a standalone program
+It runs as a standalone program:
 
     $ ./googler
 
-If you run this program with no options you will get this:
+If you run it with no options you will get this:
 
     Please initiate a query.
     googler (? for help)
@@ -69,7 +69,7 @@ Use the option `-n` to get a number of results like this:
 
 ## Show results from the News section
 
-Keep in mind that many options are case sensitive. If you want to get results from the news section use this:
+Many options are case sensitive. If you want to get results from the news section use this:
 
     $ -N
 
@@ -100,7 +100,9 @@ These are a few popular TLDs:
 
 ## Show results in a specific language:
 
-Use this options to show results in a language. For example, Spanish:
+Use this option to show results in a language.
+
+For example, Spanish:
 
     $ -l es
 
@@ -124,7 +126,7 @@ This will be helpful to save the results to a file. You don't have to understand
 
 ## Search with a time limit
 
-Use tis option:
+Use this option:
 
     $ -t
 
@@ -155,13 +157,13 @@ For example:
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-The default number of results is 10. Let's change that to 20
+The default number of results is 10. Let's change that to 20:
 
     $ ./googler --site linkedin.com/in -n 20 'data scientist'
 
 ## Disable user agent
 
-This is important. This tool uses the user agent to simulate Firefox on Ubuntu:
+This is important. The program uses the user agent to simulate Firefox on Ubuntu:
 
     USER_AGENT = ('Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0')
 
@@ -183,23 +185,23 @@ This is important when saving the output to a file. It will search and exit. It 
 
 ## To search with filetype
 
-This is the same as searching using Google.
-
-    filetype:type
+This is the same as searching using Google:
 
     $./googler 'data science' filetype:pdf
 
 ## Saving the results to a file
 
-To understand how saving works, you know some basic Linux commands. Read <a href="https://www.tomordonez.com/from-zero-to-hero-linux.html" target="_blank">from zero to hero in Linux</a>.
+To understand how saving works, you need to know some basic Linux commands.
+
+Read my tutorial <a href="https://www.tomordonez.com/from-zero-to-hero-linux.html" target="_blank">from zero to hero in Linux</a>.
 
 Save the results to a text file: 
 
     $./googler -C 'data science' filetype:pdf > dm.txt
 
-When it's done it, the prompt will jump down twice. It might seem to get stuck. Hit `Enter` twice.
+When it's done, the prompt will move down twice. Hit `Enter` twice to exit.
 
-The option `-C` disables color output. Otherwise you will get a mess of data.
+The option `-C` disables color output. Otherwise you will get a mess of data. You don't have to understand what this means. Just use it :)
 
 ## Linkedin Xray Search
 
@@ -207,9 +209,13 @@ Ok Padawan. Now let's do a few more examples:
 
     $ ./googler -C -w linkedin.com/in -n 50 'machine learning' > ml_li.csv
 
-Open the file with `Sublime Text`. You can download it from <a href="https://www.sublimetext.com/2" target="_blank">here</a>.
+Open the file with `Sublime Text`.
 
-You could convert this "raw file" into a CSV file using a Regex macro. Read this tutorial to <a href="https://www.tomordonez.com/create-a-regex-macro-in-sublime.html" target="_blank">create a regex macro in Sublime</a>.
+You can download Sublime from <a href="https://www.sublimetext.com/2" target="_blank">here</a>.
+
+You could convert this "raw file" into a CSV file using a Regex macro.
+
+Read my tutorial to <a href="https://www.tomordonez.com/create-a-regex-macro-in-sublime.html" target="_blank">create a regex macro in Sublime</a>.
 
 You can use this macro to convert the Linkedin Xray search result to a CSV file.
 
