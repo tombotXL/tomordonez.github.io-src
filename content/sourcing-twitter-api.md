@@ -47,7 +47,9 @@ This requires:
 
 <p>&nbsp;</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zmxzEWYXC8A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zmxzEWYXC8A?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## You need to have a Twitter account
 

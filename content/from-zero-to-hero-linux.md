@@ -25,9 +25,11 @@ If you are on Windows. I recommend that you install Virtualbox and Linux.
 
 Follow the setup details on <a href="https://www.tomordonez.com/sourcing-twitter-api.html" target="_blank">this</a> page if you are on Mac or Windows.
 
-<p>&nbsp;</p>
+## Video Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CjlRWA6wqpI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CjlRWA6wqpI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Open the Terminal
 

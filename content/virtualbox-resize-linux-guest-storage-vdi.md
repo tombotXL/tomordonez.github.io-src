@@ -26,6 +26,12 @@ You also need to download the `ISO` file from `Gparted`. You can download it fro
 
 The file might say `gparted live i686.iso`.
 
+## Video Tutorial
+
+<div class="videoWrapper">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/txcq0AAeGzQ?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 ## Backup the VDI file
 
 Open Virtualbox.

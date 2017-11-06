@@ -32,8 +32,9 @@ Requires Python 3.3 or later
 
 ## Video Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KVMYBM2-DOs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
+<div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVMYBM2-DOs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Running googler
 
