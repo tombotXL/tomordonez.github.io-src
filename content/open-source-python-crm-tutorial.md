@@ -240,6 +240,103 @@ This CRM is called `Odoo`. I put the output for future reference.
 
 	$ sudo systemctl start odoo
 
+## Running the CRM
+
+Browse to:
+
+    localhost:8069
+
+The first screen you will see has this URL:
+
+    localhost:8069/web/database/selector
+
+It will show you this screen to setup the database:
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python Setup Database]({filename}/images/open-source-crm-python-database.jpg)
+
+<p>&nbsp;</p>
+
+You will have the option to `Load demonstration data`.
+
+## Open source CRM demo data
+
+If you choose the option to load demonstration data, it will send you the `Apps` screen.
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python Setup Apps]({filename}/images/crm-python-open-source-apps.jpg)
+
+<p>&nbsp;</p>
+
+Go to `CRM` and click `install`.
+
+The next screen will be the `Inbox`
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python Inbox]({filename}/images/crm-python-open-source-inbox.jpg)
+
+<p>&nbsp;</p>
+
+From here you can navigate the top menu:
+
+* Discuss
+* Calendar
+* Contacts
+* CRM
+* Apps
+* Settings
+
+Once you review all demo data, you might be inclined to delete all demo data and start with your own data.
+
+## Create a new database
+
+You can create a new database.
+
+Use this URL to select databases
+
+    http://localhost:8069/web/database/selector
+
+Use this URL to manage databases:
+
+    http://localhost:8069/web/database/manager
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python manage database]({filename}/images/crm-python-open-source-manage-db.jpg)
+
+<p>&nbsp;</p>
+
+In my example. When I created the database with the demo data, I named it `crm`.
+
+If you hit delete. You will get this screen:
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python delete database]({filename}/images/crm-python-open-source-delete-db.jpg)
+
+<p>&nbsp;</p>
+
+When you confirm deletion. You will go back to this screen:
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python new database]({filename}/images/crm-python-open-source-new-db.jpg)
+
+<p>&nbsp;</p>
+
+Once the database is created. It will go back to `Apps` where you can install the CRM module.
+
+You will now have a clean install of the CRM.
+
+<p>&nbsp;</p>
+
+![Open Source CRM in Python no data]({filename}/images/crm-python-open-source-no-data.jpg)
+
+<p>&nbsp;</p>
+
 ## Open source CRM documentation
 
 Follow the official documentation for this open source Python CRM <a href="https://www.odoo.com/documentation/user/11.0/" target="_blank">here</a>.
@@ -248,5 +345,3 @@ This tutorial is applicable to Linux Fedora but you can also install this open s
 
 
 ## If you have questions or comments about this open source Python CRM please add them below
-
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
