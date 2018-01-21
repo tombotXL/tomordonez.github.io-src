@@ -12,7 +12,7 @@ TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
 
 PATH = 'content'
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
