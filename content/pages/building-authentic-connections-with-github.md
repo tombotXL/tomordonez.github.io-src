@@ -1,10 +1,7 @@
 Title: Building Authentic Connections with Github
-Date: 2018-01-20 18:00
-Category: Recruiting
-Tags: recruiting, sourcing, Github, coding
-Slug: building-authentic-connections-with-github
 Author: Tom Ordonez
-Status: published
+Status: hidden
+Slug: building-authentic-connections-with-github
 Summary: This is an awesome way for building authentic connections with Github if you are learning to code.
 
 This is an awesome way for building authentic connections with Github if you are learning to code.
