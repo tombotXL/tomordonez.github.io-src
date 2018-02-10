@@ -11,6 +11,8 @@ SITEURL = ''
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
 
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))
+
 PATH = 'content'
 DEFAULT_PAGINATION = 10
 
@@ -31,6 +33,7 @@ ICONS = (
     ('linkedin', 'https://www.linkedin.com/in/tomordonez/'),
     ('twitter', 'https://twitter.com/tomordonez'),
     ('instagram', 'https://www.instagram.com/tomordonez/'),
+    ('github', 'https://github.com/tomordonez')
 )
     
 # Social widget
@@ -62,11 +65,12 @@ THEME = 'themes/pelican-alchemy/alchemy'
 CSS_FILE = 'style.css'
 
 PLUGIN_PATHS = [
-    'pelican-plugins'
+    'pelican-plugins',
     ]
 
 PLUGINS = [
     'sitemap',
+    'tipue_search'
     ]
 
 SITEMAP = {
