@@ -25,7 +25,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('DataScienceGrows', 'https://www.datasciencegrows.com/'),
+        ('SourceCon', 'https://www.sourcecon.com/author/tom-ordonez/'),
 )
 
 # ICONS
