@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Tom Ordonez'
 SITENAME = u'Tom Ordonez'
 SITESUBTITLE = 'Data Science, Analytics, Growing Teams'
-SITEIMAGE = '/images/tomordonez.jpg width=200 height=200'
+SITEIMAGE = ''
 DESCRIPTION = 'I am Tom Ordonez. I like data science, analytics and software development. I use Fedora Linux, Vim, Python and friends.'
 
 SITEURL = ''
