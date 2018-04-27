@@ -9,13 +9,15 @@ Summary: What is the best time to run? According to science it depends on the oz
 
 What is the best time to run? According to science it depends on the ozone levels where you live.
 
-The best time to run in San Francisco is at 6am.
+(I published this story last year in another website. I updated some code and plots)
 
-![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.png)
+## The best time to run in San Francisco is at 6am.
 
-The best time to run in Miami is at 6am or 7am but not at noon.
+![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.jpg)
 
-![Best time to run in Miami]({filename}/images/ozone-miami-2016.png)
+## The best time to run in Miami is at 6am or 7am but not at noon.
+
+![Best time to run in Miami]({filename}/images/ozone-miami-2016.jpg)
 
 I studied ozone levels from a data set that showed hourly measurements of ozone levels for different cities in the US for 2016.
 
@@ -23,13 +25,10 @@ I studied ozone levels from a data set that showed hourly measurements of ozone 
 
 Wikipedia says that ozone is a pale blue gas with a bad smell.
 
-Right there you would think that ozone must be bad for you.
+* Ozone odour is sharp, smells like chlorine and is measured in parts per billion (ppb).
+* Concentrations of 100ppb and above damages respiratory tissues. Which makes ozone a respiratory hazard near ground level.
 
-Ozone odour is sharp, smells like chlorine and is measured in parts per billion (ppb).
-
-Concentrations of 100ppb and above damages respiratory tissues. Which makes ozone a respiratory hazard near ground level.
-
-You might also know ozone as in "ozone layer". Which is a portion of the stratosphere. Actually in the lower portion of the stratosphere, about 20 miles above the ground.
+You might also know ozone as in "ozone layer". Which is a portion of the stratosphere. About 20 miles above the ground.
 
 Just to give you a better reference. Perhaps you remember the pilot saying "We are at 35,000 feet now you can watch a movie and eat peanuts". The ozone layer is at about 100,000 feet.
 
@@ -37,15 +36,15 @@ The ozone layer prevents UV light from reaching the surface. Which is actually g
 
 Bad ozone is due to...drum roll...fossil fuel burning.
 
-Here is an example of fossil fuel burning.
+## Example of fossil fuel burning
 
 ![Fossil fuel burning]({filename}/images/ozone-factory-bad.jpg)
 
-Factories burning fossil fuel.
+## Factories burning fossil fuel
 
 ![Factories burning fossil fuel]({filename}/images/ozone-factory-very-bad.jpg)
 
-Cars in traffic burning fossil fuel.
+## Cars in traffic burning fossil fuel
 
 ![Cars burning fossil fuel]({filename}/images/ozone-traffic-bad.jpg)
 
@@ -57,98 +56,40 @@ The Environmental Protection Agency (EPA) website has data sets about ozone leve
 
 I downloaded 2 data sets:
 
-Hourly ozone levels in the US from 2016. The zip file was 69MB. Uncompressed, the csv file is 2.1GB. Not something you want to open with Excel. Unless you want your computer to crash really bad.
+Hourly ozone levels in the US from 2016. The zip file was 69MB. Uncompressed, the csv file is 2.1GB.
 
 The other data set was daily AQI by county from 2016. The zip file was 1.6MB and the csv file was 26.4MB.
 
-I actually had to do a lot of research about this cause I was not familiar with this topic.
+`AQI` stands for `Air Quality Index`. A measure developed by EPA to explain pollution levels to the general public.
 
-AQI stands for Air Quality Index. A measure developed by EPA to explain pollution levels to the general public.
-
-I used Rstudio to open and analyze the data. Rstudio is an open source software for R, a programming language for statistical computing.
-
-It turns out that loading a 2GB file into Rstudio was not such a good idea. After loading the file and waiting about 5 minutes, it crashed. I figured it must be loading 2GB into memory and with all the things I had running, including a VM with 4GB. It wasn't going to work.
-
-I decided to split the 2GB file into 3 smaller files.
-
-The file I downloaded was called `hourly_44201_2016.csv`. When I unzipped it, I renamed it to `ozone_hourly_2016.csv`.
-
-First I counted the number lines on the file:
-
-    $ wc -l ozone_hourly_2016.csv
-
-    9124269 ozone_hourly_2016.csv
-
-Then I divided this number by 3 which was a whole number `3041423`.
-
-I divided the file into 3 smaller files like this:
-
-    $ split -l 3041423 ozone_hourly_2016.csv
-
-These resulted in 3 files called `xaa`, `xab`, `xac`.
-
-Each file was about 650MB.
-
-I renamed each file so they looked like this:
-
-    ozone_hourly_2016_a.csv
-    ozone_hourly_2016_b.csv
-    ozone_hourly_2016_c.csv
-
-### Edit 7/18/17
-
-I made a mistake splitting the data like this. I tried loading the 2nd data set and it gave me this warning:
-
-    Warning messages:
-    1: Missing column names filled in: 'X17' [17], 'X18' [18] 
-    2: Duplicated column names deduplicated: '2016-10-06' => '2016-10-06_1' [12]
-
-When I tried selecting something from the data set such as:
-
-    > select(ozone, State.Name) %>% unique
-
-It gave me this error:
-
-    Error in overscope_eval_next(overscope, expr) :
-    object 'State.Name' not found
-
-I figured that when I split the data into 3 files. The first header row stayed with the 1st file but I cut it off from the 2nd and 3rd files.
-
-I found this bash script that works well. (<a href="https://gist.github.com/steezeburger/98114746b2e4c5fa1ad1" target="_blank">source</a>).
-
-    #!/bin/bash
-    FILENAME=filename_here.csv
-    HDR=$(head -1 $FILENAME)
-    split -l 100 $FILENAME xyz
-    n=1
-    for f in xyz*
-    do
-    echo $HDR > Part${n}
-    cat $f >> Part${n}
-    rm $f
-    ((n++))
-    done
-
-Then I replaced these lines.
-
-    FILENAME=ozone_hourly_2016.csv
-
-    split -l 3041423 $FILENAME xyz
-
-The output was 3 files called "Part1", "Part2", "Part3".
+I used `Rstudio` to open and analyze the data. Rstudio is an open source software for `R`, a programming language for statistical computing.
 
 ## Loading the data into Rstudio
 
 This process comes from the Coursera class "Managing Data Analysis".
 
-    > library(readr)
-    > ozone <- read_csv("ozone_hourly_2016_a.csv", 
-    col_types = "ccccinnccccccncnnccccccc")
-    > names(ozone) <- make.names(names(ozone))
+Setup the project:
+
+1. File New Project
+2. New Directory
+3. Empty Project
+4. Enter name and browse to subdirectory
+
+## Install `readr`
+
+If you don't have the package `readr` you need to install it. It will take about 5 minutes:
+
+    > install.packages("readr")
 
 The library `readr` is needed to read `rectangular data` such as `csv`.
 
-The function `read_csv` converts the `csv` file into a data frame. If you don't specify the types for columns, strange things happen.
+Then load the library:
+
+    > library(readr)
+
+## Load the `CSV` file with `read_csv`
+
+Load the `CSV` file and create an object. The function `read_csv` converts the `csv` file into a data frame. If you don't specify the types for columns, strange things happen.
 
 For example the data set has a column called `Time.Local`, which by default is of type integer. If you run a plot using Time.Local you will get the time in seconds instead of hours, such as:
 
@@ -163,7 +104,9 @@ The column type has to be set to `c` character so that `Time.Local` can take val
     02:00
     and so on...
 
-Setting the column types depend on the columns. But how do you set them up if you haven't loaded the data?
+Setting the column types depend on the columns.
+
+But how do you set them up if you haven't loaded the data?
 
 The data source should have a description of the data. In this case there is more information about this data set on the <a href="http://aqsdr1.epa.gov/aqsweb/aqstmp/airdata/FileFormats.html#_hourly_data_files" target="_blank">EPA website</a>.
 
@@ -173,9 +116,12 @@ The data source should have a description of the data. In this case there is mor
 
 ![Ozone Data Set Format]({filename}/images/ozone-data-set-format-3.png)
 
-I had a hard time understanding this line:
+Here is the line to load the `CSV` into the object `ozone`.
 
-    > names(ozone) <- make.names(names(ozone))
+    > ozone <- read_csv("ozone_data_2016.csv", 
+    col_types = "ccccinnccccccncnnccccccc")
+
+## Get the names of the columns
 
 If you call this function: `names(ozone)` you get this result:
 
@@ -192,6 +138,8 @@ If you call this function: `names(ozone)` you get this result:
 By definition `names` is used to get or set the name of an object.
 
 If the object is a dataframe it gets the names of the columns.
+
+## Normalize the column names
 
 If you call this function: `make.names(names(ozone))` you get this result:
 
@@ -211,6 +159,8 @@ I am thinking that one of the reasons for this conversion is the problem of spac
 
 To normalize the column names, and replace spaces with periods, use: `make.names(names(ozone))`.
 
+## Replace the names of columns
+
 Finally, this is used to set this conversion back to the `names` object:
 
     > names(ozone) <- make.names(names(ozone))
@@ -229,12 +179,10 @@ Now, when you call `names(ozone)` the spaces are replaced by dots.
 
 ## Reviewing the top and bottom
 
-I wanted to check a little bit of information about this data set.
-
 Check the number of rows:
 
     > nrow(ozone)
-    [1] 3041422
+    [1] 9124268
 
 Check the number of columns:
 
@@ -247,13 +195,13 @@ Then check the top of the file:
     
     # A tibble: 6 x 3
     Latitude Longitude Date.Local
-    <dbl>     <dbl>     <date>
-    1 30.49748 -87.88026 2016-03-01
-    2 30.49748 -87.88026 2016-03-01
-    3 30.49748 -87.88026 2016-03-01
-    4 30.49748 -87.88026 2016-03-01
-    5 30.49748 -87.88026 2016-03-01
-    6 30.49748 -87.88026 2016-03-01
+          <dbl>     <dbl> <chr>     
+    1     30.5     -87.9 2016-03-01
+    2     30.5     -87.9 2016-03-01
+    3     30.5     -87.9 2016-03-01
+    4     30.5     -87.9 2016-03-01
+    5     30.5     -87.9 2016-03-01
+    6     30.5     -87.9 2016-03-01
 
 Check the bottom of the file:
 
@@ -261,15 +209,17 @@ Check the bottom of the file:
 
     # A tibble: 6 x 3
     Latitude Longitude Date.Local
-    <dbl>     <dbl>     <date>
-    1 31.16973 -81.49588 2016-10-06
-    2 31.16973 -81.49588 2016-10-06
-    3 31.16973 -81.49588 2016-10-06
-    4 31.16973 -81.49588 2016-10-06
-    5 31.16973 -81.49588 2016-10-06
-    6 31.16973 -81.49588 2016-10-06
+        <dbl>     <dbl> <chr>     
+    1     18.2     -65.9 2016-12-31
+    2     18.2     -65.9 2016-12-31
+    3     18.2     -65.9 2016-12-31
+    4     18.2     -65.9 2016-12-31
+    5     18.2     -65.9 2016-12-31
+    6     18.2     -65.9 2016-12-31
 
-Check the number of records for each hour using the `table` function. This function "uses the cross classifying factors to build a contingency table of counts at each combination of factor levels".
+## Check the number of records for each hour
+
+Using the `table` function. This function "uses the cross classifying factors to build a contingency table of counts at each combination of factor levels".
 
 In this case I know that the ozone levels are measured every hour from midnight to noon to 11pm. I would like to know the number of records for each hour.
 
@@ -277,45 +227,53 @@ In this case I know that the ozone levels are measured every hour from midnight 
 
 This results in:
 
-    00:00  01:00  02:00  03:00  04:00  05:00  06:00  07:00  08:00  09:00  10:00  11:00 
-    125583 123492 123164 113318 108397 129616 129409 128492 127368 126764 126848 127399 
-     12:00  13:00  14:00  15:00  16:00  17:00  18:00  19:00  20:00  21:00  22:00  23:00 
-    127953 128387 128933 129458 129934 130187 130339 130384 130293 130176 127947 127581
+    00:00  01:00  02:00  03:00  04:00  05:00  06:00  07:00  08:00  
+    369489 373144 359722 358576 363421 385829 386222 384176 381303 
+    09:00  10:00  11:00  12:00  13:00  14:00  15:00  16:00
+    379689 379424 380814 381202 383439 385152 386580 387565
+    17:00  18:00  19:00  20:00  21:00  22:00  23:00 
+    388252 388576 388656 388650 387492 377278 379617
 
 ## What does this data mean?
 
 I selected and filtered parts of the data to understand more about it.
 
-Since I cut the file in 3 parts I thought how the original file was structured.
-
 Was the data grouped by state? Or was the data grouped by hour?
 
 I learned that there are monitors all around the US that can measure ozone levels.
 
+## Install `dplyr`
+
 The next step requires to use the library `dplyr`. Which is the next iteration of `plyr`, a set of tools for splitting, applying and combining data. `dplyr` "provides a flexible grammar of data manipulation...focused on tools for working with data frames".
+
+    > install.packages("dplyr")
+
+This might ask to restart the `R` session before installing. Then try again. Now load the library.
 
     > library(dplyr)
 
-I wanted to see which states were included in the partial data set I loaded.
+## US States in the data set
+
+I wanted to see which states were included in the data set I loaded.
 
     > select(ozone, State.Name) %>% unique
 
-    # A tibble: 11 x 1
-    State.Name
-    <chr>
-    1              Alabama
-    2               Alaska
-    3              Arizona
-    4             Arkansas
-    5           California
-    6             Colorado
-    7          Connecticut
-    8             Delaware
-    9 District Of Columbia
-    10              Florida
-    11              Georgia
+    # A tibble: 52 x 1
+    State.Name          
+       <chr>               
+     1 Alabama             
+     2 Alaska              
+     3 Arizona             
+     4 Arkansas            
+     5 California          
+     6 Colorado            
+     7 Connecticut         
+     8 Delaware            
+     9 District Of Columbia
+    10 Florida             
+    # ... with 42 more rows
 
-I figured the problem of splitting the data like this was breaking the data set from Alabama to Georgia. And I wouldn't be able to do a correlation between, for instance, Alabama and Virginia.
+## Ozone levels in Florida
 
 I filtered the data set to see the ozone levels in Florida on July 9, 2016 at 6am for all counties
 
@@ -341,13 +299,15 @@ The result was:
     10     Collier              0.004
     # ... with 48 more rows
 
+## Convert PPM (parts per million) to PPM (per billion)
+
 The sample measurement has units of `ppm` (parts per million).
 
 To convert to `ppb` (parts per billion) you just move the dot three times to the right.
 
 For instance, the first row that says `0.002 ppm` converts to `2 ppb`.
 
-I learned that the EPA has an AQI calculator to convert from ppb to AQI (air quality index).
+I learned that the EPA has an `AQI` calculator to convert from ppb to AQI (air quality index).
 
 In the AQI calculator you have a few choices as shown here:
 
@@ -360,7 +320,7 @@ In the AQI calculator you have a few choices as shown here:
 
 The way to choose between 8hr and 1hr is:
 
-AQI values of 301 or greater are calculated with 1-hr ozone concentrations.
+`AQI` values of `301` or greater are calculated with 1-hr ozone concentrations.
 
 ## AQI Categories
 
@@ -399,8 +359,9 @@ I filtered the data to find ozone measurements above 0.100 ppm (aka 100ppb). Whi
     8    Arkansas  Crittenden  2016-06-10   15:00:00   0.104
     9  California  Alameda     2016-06-03   15:00:00   0.102
     10 California  Alameda     2016-07-26   15:00:00   0.102
+    # ... with 1,575 more rows
 
-This shows that on February 23, 2016 at noon, there was a measurement of 346ppb in Jefferson county, Alabama.
+This shows that on `February 23, 2016` at noon, there was a measurement of `346ppb` in Jefferson county, Alabama.
 
 Converted to AQI results in `276` aka "Very Unhealthy" and very close to "Hazardous", which is described as "Health warnings of emergency conditions. The entire population is more likely to be affected."
 
@@ -409,8 +370,6 @@ After a quick Google search I found that Jefferson county is amongst the top mos
 ![Air quality in Jefferson County, Alabama]({filename}/images/jefferson-county-alabama.png)
 
 I read on Wikipedia that before Detroit. This county was the largest bankruptcy in the US with corruption being a big cause. Not sure if there is a correlation between corruption and air quality level.
-
-Things like these make you wonder about what the government is doing to keep all these factories in check to keep AQI under normal levels.
 
 It is worth exploring this data into more detail to find some correlation and try to answer a lot of interesting questions. Such as the correlation of corruption and air quality level.
 
@@ -422,9 +381,11 @@ I know the names of some state counties in Florida. For example, for Miami, I kn
 
 For each state I created vectors with the names of counties. I visualized the vectors into a table and then created a filter for the specific county.
 
-Finally, I plotted Time vs Sample Measurement.
+Finally, I plotted `Time vs Sample Measurement`.
 
 I suffered a little bit making these plots, as noted below.
+
+## Plotting Workflow
 
 For example, look at the plotting workflow for Miami.
 
@@ -446,6 +407,8 @@ On the view I saw they had it as `Miami-Dade`.
         County.Name == "Miami-Dade") %>% 
         select(Date.Local, Time.Local, 
             Sample.Measurement)
+
+## Troubleshooting drawing the Plot
 
 I filtered by county name and then plotted `Time.Local` vs `Sample.Measurement`.
 
@@ -521,12 +484,16 @@ As far as the error saying:
 
 I assume that `plot` is trying to make `Time.Local` which is a character element into numeric data. And when it fails to do this, it is returning NAs. (although I might be wrong about this).
 
+## Plotting Best Time to Run
+
 Instead I thought that there is a way to plot `Time.Local` as a factor.
 
     > plot(factor(ozone.miami.2016$Time.Local), 
     ozone.miami.2016$Sample.Measurement, 
     main = "Best Time to Run in Miami", 
     xlab = "Hour", ylab = "Ozone level in ppm")
+
+## Troubleshooting lower case and UPPER case variables
 
 I also suffered a little bit with lower case and upper case variables.
 
@@ -558,9 +525,36 @@ I figured that normalizing the data is a pain in the butt.
 
 I followed the same process to plot Miami, Washington DC, San Francisco and Los Angeles.
 
+## Summary how to Plot in R
+
+Get a list of States:
+
+    unique(ozone$State.Name)
+
+Find the County Name. This will give you a table of County names:
+
+    florida.counties <- filter(ozone, State.Name == "Florida") 
+    %>% select(County.Name) %>% unique
+
+    View(florida.counties)
+
+In this case I found the county for Miami Dade to be `Miami-Dade`.
+
+Filter the data and create an object:
+
+    ozone.miami.2016 <- filter(ozone, County.Name == "Miami-Dade")
+     %>% select(Date.Local, Time.Local, Sample.Measurement)
+
+Create a plot with this object and add titles:
+
+    plot(factor(ozone.miami.2016$Time.Local), 
+    ozone.miami.2016$Sample.Measurement, main = 
+    "Best Time to Run in Miami", xlab = "Hour", 
+    ylab = "Ozone level in ppm")
+
 ## Best Time To Run in Miami
 
-![Best time to run in Miami]({filename}/images/ozone-miami-2016.png)
+![Best time to run in Miami]({filename}/images/ozone-miami-2016.jpg)
 
     > summary(ozone.miami.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -578,7 +572,22 @@ Looking at the ozone levels in Miami:
 
 ## Best Time to Run in Washington DC
 
-![Best time to run in Washington DC]({filename}/images/ozone-dc-2016.png)
+    dc.counties <- filter(ozone, State.Name == 
+        "District Of Columbia") %>% select(County.Name) 
+        %>% unique
+
+    View(dc.counties)
+
+    ozone.dc.2016 <- filter(ozone, County.Name == 
+        "District of Columbia") %>% select(Date.Local, 
+            Time.Local, Sample.Measurement)
+
+    plot(factor(ozone.dc.2016$Time.Local),
+     ozone.dc.2016$Sample.Measurement, 
+     main = "Best Time to Run in DC", 
+     xlab = "Hour", ylab = "Ozone level in ppm")
+
+![Best time to run in Washington DC]({filename}/images/ozone-dc-2016.jpg)
 
     > summary(ozone.dc.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -594,7 +603,22 @@ Ozone levels in Washington DC:
 
 ## Best Time to Run in San Francisco
 
-![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.png)
+    ca.counties <- filter(ozone, State.Name == 
+        "California") %>% select(County.Name) 
+        %>% unique
+
+    View(ca.counties)
+
+    ozone.sf.2016 <- filter(ozone, County.Name == 
+        "San Francisco") %>% select(Date.Local, 
+            Time.Local, Sample.Measurement)
+
+    plot(factor(ozone.sf.2016$Time.Local), 
+    ozone.sf.2016$Sample.Measurement, main = 
+    "Best Time to Run in San Francisco", 
+    xlab = "Hour", ylab = "Ozone level in ppm")
+
+![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.jpg)
 
     > summary(ozone.sf.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -609,7 +633,7 @@ Ozone levels in San Francisco:
 
 ## Best Time to Run in Los Angeles
 
-![Best time to run in Los Angeles]({filename}/images/ozone-la-2016.png)
+![Best time to run in Los Angeles]({filename}/images/ozone-la-2016.jpg)
 
     > summary(ozone.la.2016$Sample.Measurement)
         Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
