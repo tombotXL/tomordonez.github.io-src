@@ -94,9 +94,25 @@ If there is a prompt then type:
 
 ![OpenVPN Stop]({filename}/images/stop-openvpn.gif)
 
+## Alternative Way of Adding the VPN
+
+Both Linux Ubuntu and Fedora have a user interface to add the VPN. That way you don't need to have the VPN running from the shell. And you can select easier from a list of VPNs if you want to configure many of them.
+
+If you go to Settings > Network.
+
+There should be an option for VPN.
+
+* Add VPN
+* Import from file
+* Find the `.ovpn` file.
+* Enter your account user and pwd
+* Disable IPv6
+* Enable the VPN
+* Test your IP
+
 ## IPv6 Issues
 
-In the US Comcast has IPv6 enabled and this can be an issue.
+In the US. Comcast has IPv6 enabled and this can be an issue.
 
 The best solution is to login to your router. Disable IPv6 and enable IPv4.
 
@@ -105,16 +121,22 @@ If this is not possible. You can try to disable IPv6 from the command line. But 
 To disable IPv6 from terminal:
 
     sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
-    sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 
 To re-enable IPv6:
 
     sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
-    sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
 
-If you disable IPv6 and you lose internet, you will realize that IPv4 is not enabled.
+Or edit the file directly with:
 
-If you cannot login to the router with the default credentials and you cannot disable IPv6, then the VPN might not work correctly.
+    sudo vim /etc/sysctl.conf
+
+You can also disable IPv6 from your laptop Wifi Settings.
+
+If you disable IPv6 and you lose internet. Try restarting your laptop Wifi or Wifi card.
+
+## Verify your IP
+
+Always check your IP with `https://hide.me/en/check` to review if IPv6 has been disabled. And check the new IP number.
 
 ## IPv6 alternative solution
 
@@ -130,9 +152,4 @@ Go to `https://hide.me/en/check`.
 
 It should show the IP number of the Location you downloaded.
 
-Then google this "what is my IP". It should also show the VPN IP number.
-
-
-## If you have questions or comments please add them below
-
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+Then google "what is my IP". It should also show the VPN IP number.
