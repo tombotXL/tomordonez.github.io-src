@@ -25,6 +25,8 @@ If you are on Windows. I recommend that you install Virtualbox and Linux.
 
 Follow the setup details on <a href="https://www.tomordonez.com/sourcing-twitter-api.html" target="_blank">this</a> page if you are on Mac or Windows.
 
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><h2><label for="tlemail">Tom's Data Science Quest</label></h2><p>I am doing a MS in Computer Science at Georgia Tech with a focus in Machine Learning. I am writing a weekly newsletter about my lessons learned. Follow my quest to conquer data science.</p><p><input type="text" style="width:140px" name="email" id="tlemail" value placeholder=" tony@stark.com" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
+
 ## Video Tutorial
 
 <div class="videoWrapper">
@@ -363,6 +365,4 @@ Let's use a combination of previous commands:
 
 I used `cat emails.csv` to open the file. Used the `|` pipe to send the output of that to the input of `wc -l` which is used to count the lines. In this case four lines.
 
-## If you have questions or comments please add them below
-
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><h2><label for="tlemail">Tom's Data Science Quest</label></h2><p>I am doing a MS in Computer Science at Georgia Tech with a focus in Machine Learning. I am writing a weekly newsletter about my lessons learned. Follow my quest to conquer data science.</p><p><input type="text" style="width:140px" name="email" id="tlemail" value placeholder=" tony@stark.com" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>

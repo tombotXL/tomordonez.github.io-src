@@ -7,7 +7,7 @@ Author: Tom Ordonez
 Status: published
 Summary: Follow this tutorial to install Tmux on Linux
 
-Follow this tutorial to install Tmux on Linux.
+Follow this tutorial to **install Tmux on Linux**.
 
     $ sudo apt-get install tmux
 
@@ -42,124 +42,47 @@ Tmux has the config file `.tmux.conf`. If after installing is not in your home d
 The following configuration is from the Tmux book mentioned above:
 
     set -g default-terminal "xterm"
-
     set -g prefix C-a
-
     unbind C-b
-
     set -s escape-time 1
-
     set -g base-index 1
-
     setw -g pane-base-index 1
-
     bind r source-file ~/.tmux.conf \; display "Reloaded!"
-
     bind C-a send-prefix
-
     bind | split-window -h
-
     bind - split-window -v
-
     bind h select-pane -L
-
     bind j select-pane -D
-
     bind k select-pane -U
-
     bind l select-pane -R
-
     bind -r C-h select-window -t :-
-
     bind -r C-l select-window -t :+
-
     bind -r H resize-pane -L 5
-
     bind -r J resize-pane -D 5
-
     bind -r K resize-pane -U 5
-
     bind -r L resize-pane -R 6
-
     set -g default-terminal "screen-256color"
-
-    # set -g status-fg white
-
-    # set -g status-bg black
-
-    # setw -g window-status-fg cyan
-
-    # setw -g window-status-bg default
-
-    # setw -g window-status-attr dim
-
-    # setw -g window-status-current-fg white
-
-    # setw -g window-status-current-bg red
-
-    # setw -g window-status-current-attr bright
-
-    # default statusbar colors
-
     set-option -g status-bg colour235 #base02
-
     set-option -g status-fg colour136 #yellow
-
     set-option -g status-attr default
-
-    # default window title colors
-
     set-window-option -g window-status-fg colour244 #base0
-
     set-window-option -g window-status-bg default
-
-    #set-window-option -g window-status-attr dim
-
-    # active window title colors
-
     set-window-option -g window-status-current-fg colour166 #orange
-
     set-window-option -g window-status-current-bg default
-
-    #set-window-option -g window-status-current-attr bright
-    
-    # pane border
-
     set-option -g pane-border-fg colour235 #base02
-
-    set-option -g pane-active-border-fg colour240 #base01
-    
-    # message text
-
+    set-option -g pane-active-border-fg colour240 #base01  
     set-option -g message-bg colour235 #base02
-
     set-option -g message-fg colour166 #orange
-   
-    # pane number display
-
     set-option -g display-panes-active-colour colour33 #blue
-
     set-option -g display-panes-colour colour166 #orange
-    
-    # clock
-
     set-window-option -g clock-mode-colour colour64 #green
-    
     set -g status-left-length 40
-
     set -g status-left "#[fg=green]SomeNameHere: #S #[fg=yellow]#I #[fg=cyan]#P"
-
     set -g status-right "#[fg=cyan]%d %b %R"
-
     set -g status-justify centre
-
     set -g monitor-activity on
-
     set -g visual-activity on
-
     setw -g mode-keys vi
-
-    # set-option -g default-command "reattach-to-user-namespace -l $SHELL"
 
 ## Remap the Caps Lock with Ctrl
 
@@ -198,4 +121,4 @@ To get a list of all tmuxinator sessions do:
 
 Get the book "Tmux Productive Mouse Free Development" to understand in more detail how Tmux works.
 
-## Questions about Tmux on Linux? Please comment below
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><h2><label for="tlemail">Tom's Data Science Quest</label></h2><p>I am doing a MS in Computer Science at Georgia Tech with a focus in Machine Learning. I am writing a weekly newsletter about my lessons learned. Follow my quest to conquer data science.</p><p><input type="text" style="width:140px" name="email" id="tlemail" value placeholder=" tony@stark.com" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>

@@ -7,11 +7,11 @@ Author: Tom Ordonez
 Status: published
 Summary: Follow this process to transfer files from Windows 10 to Ubuntu in VirtualBox.
 
-Follow this process to transfer files from Windows 10 to Ubuntu in VirtualBox.
+Follow this process to transfer files from **Windows 10 to Ubuntu in VirtualBox**.
 
 ![Windows 10 to Ubuntu VirtualBox Shared Folder]({filename}/images/windows-10-ubuntu-virtualbox-shared-folder.jpg)
 
-This applies when you have Ubuntu installed inside Windows 10 aka where Windows is the host and Ubuntu is the guest.
+This applies when you have Ubuntu installed inside Windows 10. Where Windows is the host and Ubuntu is the guest.
 
 This assumes that you already have Virtualbox installed with Ubuntu.
 
@@ -70,6 +70,4 @@ I would run the previous command like this:
 
     $ sudo chown -R tom:tom /media/sf-win10-ubuntu/
 
-## If you have questions or comments please add them below
-
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><h2><label for="tlemail">Tom's Data Science Quest</label></h2><p>I am doing a MS in Computer Science at Georgia Tech with a focus in Machine Learning. I am writing a weekly newsletter about my lessons learned. Follow my quest to conquer data science.</p><p><input type="text" style="width:140px" name="email" id="tlemail" value placeholder=" tony@stark.com" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>

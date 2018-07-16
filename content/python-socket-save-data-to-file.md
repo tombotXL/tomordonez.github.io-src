@@ -30,7 +30,7 @@ The output should be something like:
     Connected to data.pr4e.org.
     Escape character is '^]'
 
-Then entered the command:
+Then enter the command:
 
     GET / HTTP/1.0
 
@@ -112,4 +112,4 @@ The `Headers` tab shows similar info:
                 etag = match.group()
                 print(etag)
 
-## Please share your thoughts or comments
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><h2><label for="tlemail">Tom's Data Science Quest</label></h2><p>I am doing a MS in Computer Science at Georgia Tech with a focus in Machine Learning. I am writing a weekly newsletter about my lessons learned. Follow my quest to conquer data science.</p><p><input type="text" style="width:140px" name="email" id="tlemail" value placeholder=" tony@stark.com" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>

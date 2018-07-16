@@ -4,7 +4,7 @@ Status: hidden
 Slug: scrape-data-from-facebook-page-posts
 Summary: A tutorial to scrape data from Facebook pages for research purposes.
 
-This is a tutorial to scrape data from Facebook pages for research purposes.
+This is a tutorial to **scrape data from Facebook pages** for research purposes.
 
 <p>&nbsp;</p>
 ![Scrape Data From Facebook Page Posts]({filename}/images/scrape-data-from-facebook-pages.jpg)
@@ -122,7 +122,7 @@ Data is available for these types of content:
 * Comments from page posts
 * Comments from group posts
 
-To review the code in detail, please review the source <a href="https://github.com/minimaxir/facebook-page-post-scraper" target="_blank">here</a>.
+To review the code in detail, please review the source <a href="https://github.com/minimaxir/facebook-page-post-scraper" target="_blank">here</a>. Please note that I didn't write this code.
 
 ## Setup: Create a Facebook App ID
 
@@ -220,7 +220,4 @@ Then use the data analysis process to resolve questions like that.
 
 This is powerful insight.
 
-## Got questions or comments?
-
-* Read more awesome stories at <a href="https://www.tomordonez.com/" target="_blank">Tom Ordonez</a>.
-* Connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>.
+<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/tomordonez" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomordonez', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><h2><label for="tlemail">Tom's Data Science Quest</label></h2><p>I am doing a MS in Computer Science at Georgia Tech with a focus in Machine Learning. I am writing a weekly newsletter about my lessons learned. Follow my quest to conquer data science.</p><p><input type="text" style="width:140px" name="email" id="tlemail" value placeholder=" tony@stark.com" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
