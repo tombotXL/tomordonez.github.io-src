@@ -9,7 +9,7 @@ Summary: This is a short tutorial about logging in Python.
 
 This is a short tutorial about logging in Python.
 
-![Python Logging Tutorial]({filename}/images/python-logging-tutorial.gif)
+![Python Logging Tutorial]({filename}/images/python-logging-tutorial.jpg)
 
 Follow the official documentation about logging <a href="https://docs.python.org/3/library/logging.html" target="_blank">here</a>.
 
@@ -24,14 +24,16 @@ This tutorial by Fang-Pen Lin has been really helpful as well. More <a href="htt
 	logger.setLevel(logging.DEBUG)
 	fh = logging.FileHandler('output.log')
 	fh.setLevel(logging.DEBUG)
-	formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+	formatter = logging.Formatter('%(asctime)s 
+      - %(name)s - %(levelname)s - %(message)s')
 	fh.setFormatter(formatter)
 	logger.addHandler(fh)
 
 Replace a `print` statement with a `logger.info`.
 
     if len(x) == 1 and len(y) == 1:
-      logger.info('%s and %s are same length. Return %s * %s',x,y,x,y)
+      logger.info('%s and %s are same length. 
+        Return %s * %s',x,y,x,y)
 
 Don't use `format` for string concatenation. The docs for `Python3` say "This is for backwards compatibility: the logging package pre-dates newer formatting options such as str.format()"
 
@@ -140,7 +142,8 @@ TBA. I haven't used this before. Please comment with an example.
 
 Such as:
 
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(asctime)s 
+      - %(name)s - %(levelname)s - %(message)s')
 
 ## When to use logging
 
@@ -163,11 +166,12 @@ Inside `main`:
 	import logging
 	import my_module
 
-	logger = logging.getLogger(__name__)
+	logger = logging.getLogger()
 	logger.setLevel(logging.DEBUG)
 	fh = logging.FileHandler('output.log')
 	fh.setLevel(logging.DEBUG)
-	formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+	formatter = logging.Formatter('%(asctime)s 
+      - %(name)s - %(levelname)s - %(message)s')
 	fh.setFormatter(formatter)
 	logger.addHandler(fh)
 
@@ -179,3 +183,45 @@ Inside `my_module`:
     logger = logging.getLogger(__name__)
 
 Used in the same way `logger.info`...etc.
+
+## Logging and Classes
+
+Similar way as shown above:
+
+Inside `main`:
+
+    import logging
+    from my_module import Awesome
+
+    def main()
+        iam = Awesome()
+        iam.nerd()
+
+    if __name__ == "__main__":
+        logger = logging.getLogger()
+        logger.setLevel(logging.DEBUG)
+        fh = logging.FileHandler('output.log')
+        fh.setLevel(logging.DEBUG)
+        formatter = logging.Formatter('%(asctime)s 
+          - %(name)s - %(levelname)s - %(message)s')
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+
+        main()
+
+Inside `my_module`:
+
+    import logging
+
+    class Awesome():
+        def __init__(self):
+            self.logger = logging.getLogger(__name__)
+
+        def nerd(self):
+            self.logger.info('I am awesome')
+
+## Config files
+
+This <a href="https://stackoverflow.com/questions/23386290/logging-in-multiple-classes-with-module-name-in-log" target="_blank">answer</a> on StackOverflow says that it's recommended to use config files for logging.
+
+I haven't implemented this recommendation yet.
