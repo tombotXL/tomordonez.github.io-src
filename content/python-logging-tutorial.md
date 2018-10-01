@@ -220,6 +220,42 @@ Inside `my_module`:
         def nerd(self):
             self.logger.info('I am awesome')
 
+## Logging to STDOUT
+
+If you wish to also log to STDOUT. Then create a new handler.
+
+Modifying the `main` file above. It should look like this:
+
+    import sys
+
+    if __name__ == "__main__":
+        logger = logging.getLogger()
+        logger.setLevel(logging.DEBUG)
+        formatter = logging.Formatter('%(asctime)s 
+          - %(name)s - %(levelname)s - %(message)s')
+
+        fh = logging.FileHandler('output.log')
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+
+        sh = logging.StreamHandler(sys.stdout)
+        sh.setLevel(logging.ERROR)
+        sh.setFormatter(formatter)
+        logger.addHandler(sh)
+
+You can add a handler called `StreamHandler` and send this to `sys.stdout`. And set the level to `ERROR`. You also have to `import sys`.
+
+## Closing handlers
+
+At the end of your program. You can close the handlers like this:
+
+    for handler in logger.handlers:
+        handler.close()
+        logger.removeHandler(handler)
+
+`logger.handlers` contains a list of handler objects.
+    
 ## Config files
 
 This <a href="https://stackoverflow.com/questions/23386290/logging-in-multiple-classes-with-module-name-in-log" target="_blank">answer</a> on StackOverflow says that it's recommended to use config files for logging.
