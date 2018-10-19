@@ -25,7 +25,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-        ('data science quest', 'https://tinyletter.com/tomordonez'),
+        ('learning everything', 'https://tomordonez.readthedocs.io/en/latest/'),
 )
 
 # ICONS

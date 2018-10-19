@@ -35,6 +35,18 @@ Create a `github` repo for your project.
 
 The repo won't have any code. You can use the README file as a placeholder and will just have a link to the `readthedocs` site.
 
+I like to create an outer directory called `docs-repo` that contains these:
+
+* `docs` directory
+* `env`
+* `README.md`
+* `.gitignore`
+
+Create the outer directory:
+
+    $ mkdir docs-repo
+    $ cd docs-repo
+
 Create a `docs` directory:
 
     $ mkdir docs
@@ -44,8 +56,20 @@ Create and activate a virtual environment
     $ virtualenv -p /usr/bin/python3 env
     $ source env/bin/activate
 
+Create a `.gitignore` and add:
+
+    env/
+
+Initialize:
+
+    $ git init
+    $ git remote add origin your-awesome-repo.git
+
 Install Sphinx:
 
+    $ pwd
+    ../docs-repo/
+    
     $ pip install sphinx sphinx-autobuild
 
 Go inside `docs` and start `sphinx`:
@@ -157,6 +181,10 @@ I built my own `index.rst` based on this file. See my file at the end.
 
 Push to Github
 
+    $ pwd
+    ../docs-repo/docs/
+
+    $ cd ..
     $ ls
 
     docs env README.md
@@ -223,7 +251,7 @@ Follow this syntax to build the Table of Contents:
 
     .. _Course 1:
 
-    .. toctree:
+    .. toctree::
        :maxdepth: 2
        :caption: Course 1
 
@@ -250,3 +278,57 @@ To test if you built your `index.rst` file correctly. Just run:
     $ make html
 
 It will read the `index.rst` file in your root path and it will show errors in the output. Then open the `build/html/index.html` file to preview.
+
+## Troubleshooting
+
+### Menu options showing filenames instead of caption names
+
+When you add the `toctree` to your `index.rst`. Such as:
+
+    .. toctree:
+    :maxdepth: 2
+    :caption: Course 1
+
+    intro <course1/index>
+    course1/notes
+
+It seems to have a glitch when you click on a menu option. It will show the name of the file instead of the caption.
+
+In this example:
+
+    intro <course1/index>
+
+It should have the URL pointing to `course1/index.rst` with the caption `intro`.
+
+I saw that upon initial configuration and creating the root `index.rst`. The menu options show up with the right caption. But when clicking on an option on the menu. The caption names would change to the file name.
+
+This is pretty confusing in case you have secondary indices:
+
+    Course1
+      subindex1
+      subindex2
+    Course2
+      subindex1
+      subindex2
+
+I don't have a clear resolution for this but what I did was making sure that each `subindex` had:
+
+    A title
+    =======
+
+    A text. Followed by other types of text
+
+    * such as bullet point
+
+I initially had this:
+
+    A title
+    =======
+
+    * Bullet points
+
+I added a text before the bullet points then `make html`. Then it displayed the correct captions for the URL
+
+### `make html`
+
+When you run this command, it might show errors. Just read the output to correct those errors and then run again.
