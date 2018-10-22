@@ -120,7 +120,7 @@ Then run the file like this:
 This will show:
 
     .
-    --------------
+    -------------------
     Ran 1 test in 0.00s
 
 ## This is what we have so far
