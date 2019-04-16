@@ -3,9 +3,9 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Tom Ordonez'
 SITENAME = u'Tom Ordonez'
-SITESUBTITLE = 'Data Science, Machine Learning, Growing Teams'
+SITESUBTITLE = 'Data Science, Machine Learning, Software Engineering'
 SITEIMAGE = ''
-DESCRIPTION = 'I am Tom Ordonez. I like data science, machine learning and software development. I use Fedora Linux, Vim, Python and friends.'
+DESCRIPTION = 'I am Tom Ordonez. I like data science, machine learning, and software development. I use Fedora Linux, Vim, Python, Javascript, C.'
 
 SITEURL = ''
 TIMEZONE = 'America/New_York'
@@ -25,7 +25,6 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-        ('learning everything', 'https://tomordonez.readthedocs.io/en/latest/'),
 )
 
 # ICONS
