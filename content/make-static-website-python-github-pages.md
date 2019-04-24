@@ -524,7 +524,7 @@ Modify your `pelicanconf.py` file so it looks like this:
 	            }
 	}
 
-Go to your Pelican root directory and create the `robots.txt` file
+Go to your Pelican root directory and create the `robots.txt` file:
 
     env $ vim content/extra/robots.txt
 
