@@ -22,6 +22,6 @@ As seen <a href="https://stackoverflow.com/questions/47623054/does-aws-have-man-
     aws ec2 help
     aws ec2 run-instances help
 
-![AWS CLI Man Pages]({filename}/images/aws-cli-help-page.gif)
+![AWS CLI Man Pages]({static}/images/aws-cli-help-page.gif)
 
 ## Questions about AWS help pages? Please comment below

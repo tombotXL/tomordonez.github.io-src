@@ -9,7 +9,7 @@ Summary: Fixing vim stuck in insert mode
 
 Fixing vim stuck in insert mode.
 
-![Vim Stuck in Insert Mode]({filename}/images/vim-stuck-insert-mode.jpg)
+![Vim Stuck in Insert Mode]({static}/images/vim-stuck-insert-mode.jpg)
 
 As seen <a href="https://superuser.com/questions/129900/vim-stuck-in-insert-mode" target="_blank">here</a>.
 

@@ -16,7 +16,7 @@ I am a big fan of CLI tools and found TaskWarrior. Which I have been using for t
 Taskwarrior looks like this:
 
 <p>&nbsp;</p>
-![Taskwarrior to conquer Data Science with Python]({filename}/images/taskwarrior-tomordonez.jpg)
+![Taskwarrior to conquer Data Science with Python]({static}/images/taskwarrior-tomordonez.jpg)
 <p>&nbsp;</p>
 
 You can install Taskwarrior on Windows, Mac or Linux.

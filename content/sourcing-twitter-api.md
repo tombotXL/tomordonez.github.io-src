@@ -9,7 +9,7 @@ Summary: Follow this process for sourcing with the Twitter API. Getting data usi
 
 Follow this process for sourcing with the Twitter API. Getting data using Ruby and the Twitter API
 
-![Sourcing with the Twitter API]({filename}/images/sourcing-twitter-api.jpg)
+![Sourcing with the Twitter API]({static}/images/sourcing-twitter-api.jpg)
 
 Twitter CLI is a command line interface program that allows you to interact with your Twitter account using the command line.
 
@@ -340,7 +340,7 @@ This code is pulling the list of members that belong to that list and saving the
 
 I see that Sourcecon has 5 lists.
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-sourcecon-lists.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-sourcecon-lists.jpg)
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -348,7 +348,7 @@ The first list is called "SourceCon 2017 Speakers". It has 26 members.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-sourcecon-speakers.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-sourcecon-speakers.jpg)
 
 This is the URL of this list:
 
@@ -363,7 +363,7 @@ Now let's create a CSV file with all the users that belong to that list.
 
 <code>t list members -c SourceCon/sourcecon-2017-speakers > sourcecon-2017-speakers.csv</code>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-csv-file.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-csv-file.jpg)
 
 These are some of the columns from the CSV file:
 
@@ -376,8 +376,8 @@ These are some of the columns from the CSV file:
 * Location
 * URL
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-csv-details.gif)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-csv-details.gif)
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

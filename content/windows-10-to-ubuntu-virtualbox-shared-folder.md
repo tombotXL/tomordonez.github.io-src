@@ -9,7 +9,7 @@ Summary: Follow this process to transfer files from Windows 10 to Ubuntu in Virt
 
 Follow this process to transfer files from **Windows 10 to Ubuntu in VirtualBox**.
 
-![Windows 10 to Ubuntu VirtualBox Shared Folder]({filename}/images/windows-10-ubuntu-virtualbox-shared-folder.jpg)
+![Windows 10 to Ubuntu VirtualBox Shared Folder]({static}/images/windows-10-ubuntu-virtualbox-shared-folder.jpg)
 
 This applies when you have Ubuntu installed inside Windows 10. Where Windows is the host and Ubuntu is the guest.
 

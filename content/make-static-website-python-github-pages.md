@@ -286,9 +286,9 @@ If you want to open the hyperlink in a new tab/window. This cannot be done with 
 
 Use this notation to add images:
 
-    ![exclamation point and bracket for text]({filename}/images/image-file.jpg)
+    ![exclamation point and bracket for text]({static}/images/image-file.jpg)
 
-On the notation above you literally have to put `{filename}`. Then the location of the image, which can be `jpg` or `png`.
+On the notation above you literally have to put `{static}`. Then the location of the image, which can be `jpg` or `png`.
 
 Formatting code, use:
 

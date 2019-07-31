@@ -9,7 +9,7 @@ Summary: This is a regular expressions tutorial...regex heaven.
 
 This is a regular expressions tutorial...regex heaven.
 
-![Regular Expressions Tutorial Regex Heaven]({filename}/images/regular-expressions-tutorial-regex.jpg)
+![Regular Expressions Tutorial Regex Heaven]({static}/images/regular-expressions-tutorial-regex.jpg)
 
 Learning regular expressions will save you hours and hundreds of dollars.
 
@@ -260,4 +260,4 @@ Now you can do something like:
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

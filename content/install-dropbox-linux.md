@@ -9,7 +9,7 @@ Summary: Short tutorial for installing Dropbox on Linux
 
 Follow this short tutorial for installing Dropbox on Linux
 
-![Installing Dropbox on Linux]({filename}/images/installing-dropbox-linux.gif)
+![Installing Dropbox on Linux]({static}/images/installing-dropbox-linux.gif)
 
 Go <a href="https://www.dropbox.com/install-linux" target="_blank">here</a> and choose an installer.
 

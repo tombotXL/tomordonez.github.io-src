@@ -35,7 +35,7 @@ To learn more about Tmux. You should get a book called "Tmux Productive Mouse Fr
 
 ## Configuring Tmux
 
-![How To Install Tmux on Linux]({filename}/images/install-tmux-linux.gif)
+![How To Install Tmux on Linux]({static}/images/install-tmux-linux.gif)
 
 Tmux has the config file `.tmux.conf`. If after installing is not in your home directory. Then create this file.
 

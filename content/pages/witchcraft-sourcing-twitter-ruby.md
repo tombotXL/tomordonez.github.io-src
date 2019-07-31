@@ -11,14 +11,14 @@ Here is how I look on a happy day. Feel free to say hi if you see me around. I a
 You can also connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>.
 <p>&nbsp;</p>
 
-![Tom Ordonez at Sourcecon]({filename}/images/tomordonez-sourcecon-2017.jpg)
+![Tom Ordonez at Sourcecon]({static}/images/tomordonez-sourcecon-2017.jpg)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 ## Check it out on Wednesday, September 27 • 2:25pm - 3:00pm under the Programmers track
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/tomordonez-witchcraft-sourcing-sourcecon.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/tomordonez-witchcraft-sourcing-sourcecon.jpg)
 
 ## This is a preview of witchcraft sourcing with Twitter and Ruby.
 
@@ -32,7 +32,7 @@ This is a preview of what this CSV looks like.
 
 <p>&nbsp;</p>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-csv-file.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-csv-file.jpg)
 
 <p>&nbsp;</p>
 
@@ -90,7 +90,7 @@ You can do sentiment analysis using Twitter.
 
 Google this: "twitter sentiment analysis".
 
-![Twitter sentiment analysis]({filename}/images/twitter-sentiment-analysis.jpg)
+![Twitter sentiment analysis]({static}/images/twitter-sentiment-analysis.jpg)
 
 You will get about 1 million results.
 
@@ -143,7 +143,7 @@ I have used Windows since Windows 98. OMG I am feeling old right now.
 
 I am a hardware geek.
 
-![Hardware Geek]({filename}/images/hardware-geek.gif)
+![Hardware Geek]({static}/images/hardware-geek.gif)
 
 ## What's your favorite hardware?
 
@@ -153,7 +153,7 @@ In Windows it will be a little bit painful because you need a terminal to enter 
 
 For Windows I recommend that you install a Linux Virtual Machine. If you search on Youtube "install linux virtualbox on windows" you will find a lot of good tutorials to follow.
 
-![Linux Virtualbox]({filename}/images/install-linux-virtualbox.jpg)
+![Linux Virtualbox]({static}/images/install-linux-virtualbox.jpg)
 
 ## 1. Installing Ruby
 
@@ -197,7 +197,7 @@ Get a list of all available commands:
 
 <code>t help</code>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-t-help.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-t-help.jpg)
 
 Send a tweet from the command line:
 
@@ -207,13 +207,13 @@ Get details about a Twitter user:
 
 <code>t whois tomordonez</code>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-t-whois.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-t-whois.jpg)
 
 ## Get data from a Twitter list:
 
 I see that Sourcecon has 5 lists.
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-sourcecon-lists.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-sourcecon-lists.jpg)
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -221,7 +221,7 @@ The first list is called "SourceCon 2017 Speakers". It has 26 members (as of thi
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-sourcecon-speakers.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-sourcecon-speakers.jpg)
 
 This is the URL of this list:
 
@@ -236,7 +236,7 @@ Now let's create a CSV file with all the users that belong to that list.
 
 <code>t list members -c SourceCon/sourcecon-2017-speakers > sourcecon-2017-speakers.csv</code>
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-csv-file.jpg)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-csv-file.jpg)
 
 These are some of the columns from the CSV file:
 
@@ -249,7 +249,7 @@ These are some of the columns from the CSV file:
 * Location
 * URL
 
-![Twitter Sourcing with Tom Ordonez]({filename}/images/twitter-sourcing-tomordonez-csv-details.gif)
+![Twitter Sourcing with Tom Ordonez]({static}/images/twitter-sourcing-tomordonez-csv-details.gif)
 
 ## What to do with this data?
 
@@ -259,4 +259,4 @@ These are some of the columns from the CSV file:
 * Create a data warehouse
 
 ## Connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>
-![Find me on Linkedin Tom Ordonez]({filename}/images/contact-tomordonez-linkedin.gif)
+![Find me on Linkedin Tom Ordonez]({static}/images/contact-tomordonez-linkedin.gif)

@@ -9,7 +9,7 @@ Summary: This is how to redirect stdout and stderr in bash
 
 This is how to redirect stdout and stderr in bash.
 
-![Redirect stdout and stderr in bash]({filename}/images/redirect-stdout-stderr-bash.png)
+![Redirect stdout and stderr in bash]({static}/images/redirect-stdout-stderr-bash.png)
 
 Search for:
 
@@ -20,25 +20,25 @@ Search for:
 
 As seen <a href="http://tldp.org/LDP/abs/html/io-redirection.html" target="_blank">here</a>.
 
-Redirect stdout to file "filename."
+Redirect stdout to file "static."
 
-    1>filename
+    1>static
 
-Redirect and append stdout to file "filename."
+Redirect and append stdout to file "static."
 
-    1>>filename
+    1>>static
 
-Redirect stderr to file "filename."
+Redirect stderr to file "static."
 
-    2>filename
+    2>static
 
-Redirect and append stderr to file "filename."
+Redirect and append stderr to file "static."
 
-    2>>filename
+    2>>static
 
-Redirect both stdout and stderr to file "filename."
+Redirect both stdout and stderr to file "static."
 
-    &>filename
+    &>static
     
 Redirect stderr to stdout.
 
@@ -47,4 +47,4 @@ Redirect stderr to stdout.
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

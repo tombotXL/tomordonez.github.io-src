@@ -9,7 +9,7 @@ Summary: Awesome tutorial for installing a Minecraft server on Mac.
 
 Awesome tutorial for installing a Minecraft server on Mac.
 
-![Installing a Minecraft Server on Mac]({filename}/images/installing-minecraft-server-mac.jpg)
+![Installing a Minecraft Server on Mac]({static}/images/installing-minecraft-server-mac.jpg)
 
 I am reading a book to apply Python to Minecraft. The book is called <a href="https://nostarch.com/programwithminecraft" target="_blank">"Learn to Program with Minecraft"</a> by Craig Richardson.
 

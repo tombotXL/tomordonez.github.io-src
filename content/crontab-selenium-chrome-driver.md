@@ -9,7 +9,7 @@ Summary: This is how to setup a crontab with Selenium and Chrome Driver
 
 This is how to setup a crontab with Selenium and Chrome Driver
 
-![Crontab with Selenium and Chrome Driver]({filename}/images/crontab-selenium-chrome-driver.jpg)
+![Crontab with Selenium and Chrome Driver]({static}/images/crontab-selenium-chrome-driver.jpg)
 
 If you are here I assume you have some knowledge of `cron`. Otherwise read this <a href="https://www.tomordonez.com/automating-tasks-crontab.html">cronjob tutorial</a>.
 

@@ -78,7 +78,7 @@ Then I pull the changes and publish the blog.
     git pull
     make html && make publish
 
-I am having a problem here. I usually review the changes before publishing with `make serve`. However, using this command runs the engine on the Server and not on Local. I am not able to browse the server localhost on local. I also cannot open the output html with `google-chrome filename.html`, because it tries to open the file on Server and not on Local.
+I am having a problem here. I usually review the changes before publishing with `make serve`. However, using this command runs the engine on the Server and not on Local. I am not able to browse the server localhost on local. I also cannot open the output html with `google-chrome static.html`, because it tries to open the file on Server and not on Local.
 
 For now I have to trust that Mr Hyde's draft has the correct markdown syntax.
 

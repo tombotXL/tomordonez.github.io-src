@@ -9,7 +9,7 @@ Summary: Troubleshooting SSL Module in Python Is Not Available
 
 Troubleshooting SSL Module in Python Is Not Available
 
-![pip install SSL Module in Python Is Not Available]({filename}/images/pip-install-ssl-module-python-is-not-available.jpg)
+![pip install SSL Module in Python Is Not Available]({static}/images/pip-install-ssl-module-python-is-not-available.jpg)
 
 Setup:
 

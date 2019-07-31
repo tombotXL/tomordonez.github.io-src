@@ -67,7 +67,7 @@ Let's say I build a silly app called "Learn to Add".
 The presentation layer shows `1` plus `2` and the Add button.
 
 <p>&nbsp;</p>
-![Learn to Add Mobile App]({filename}/images/learn-to-add.gif)
+![Learn to Add Mobile App]({static}/images/learn-to-add.gif)
 <p>&nbsp;</p>
 
 To keep it simple...the business layer is the one that decides that `1+2` is `3`.
@@ -93,7 +93,7 @@ In Chrome go to:
 * Developer tools
 
 <p>&nbsp;</p>
-![Developer Tools Chrome]({filename}/images/developer-tools-chrome.gif)
+![Developer Tools Chrome]({static}/images/developer-tools-chrome.gif)
 <p>&nbsp;</p>
 
 A new window will open. Often by default it shows the `Elements` tab.
@@ -101,13 +101,13 @@ A new window will open. Often by default it shows the `Elements` tab.
 To look at the traffic sent from your browser to Google's server. Go to the tab that says `Network`.
 
 <p>&nbsp;</p>
-![Developer Tools Chrome Network]({filename}/images/chrome-developer-tools-network.jpg)
+![Developer Tools Chrome Network]({static}/images/chrome-developer-tools-network.jpg)
 <p>&nbsp;</p>
 
 I am going to Google for the keyword `juanes` and see what happens.
 
 <p>&nbsp;</p>
-![Chrome Network Juanes]({filename}/images/chrome-network-juanes.gif)
+![Chrome Network Juanes]({static}/images/chrome-network-juanes.gif)
 <p>&nbsp;</p>
 
 The Network tab shows some output:
@@ -243,7 +243,7 @@ To request this certificate I need to generate a key pair that has a Public Key 
 That was tough right? Let's take a break by looking at this random cat that has nothing to do with this post...this cat reminds me of David Bowie (Cat People putting out fire).
 
 <p>&nbsp;</p>
-![David Bowie cat]({filename}/images/david-bowie-cat.jpg)
+![David Bowie cat]({static}/images/david-bowie-cat.jpg)
 <p>&nbsp;</p>
 
 When connecting to secure sites on the Internet. The connection between you and the server is encrypted and it uses a digital certificate to verify your identity.
@@ -297,7 +297,7 @@ If everything is set correctly.
 Now go back to the Terminal and there should be output.
 
 <p>&nbsp;</p>
-![Mobile traffic output]({filename}/images/mobile-traffic-output1.jpg)
+![Mobile traffic output]({static}/images/mobile-traffic-output1.jpg)
 <p>&nbsp;</p>
 
 To navigate the output use this:
@@ -318,7 +318,7 @@ Like this one:
 It captured the autocomplete as I typed each letter in the keyword `juanes`.
 
 <p>&nbsp;</p>
-![Mobile traffic output]({filename}/images/safari-juanes-autocomplete.jpg)
+![Mobile traffic output]({static}/images/safari-juanes-autocomplete.jpg)
 <p>&nbsp;</p>
 
 As I keep scrolling down on the terminal I see things like:
@@ -438,7 +438,7 @@ Then type `:q` to quit the current file to go back to `mitmproxy`.
 Now I am going to open this JSON file with Sublime Text.
 
 <p>&nbsp;</p>
-![JSON list attendees]({filename}/images/json_list_attendees.gif)
+![JSON list attendees]({static}/images/json_list_attendees.gif)
 <p>&nbsp;</p>
 
 The JSON file has a lot of attendee information from this conference such as:
