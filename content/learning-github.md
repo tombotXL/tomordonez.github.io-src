@@ -50,6 +50,7 @@ I created a new branch called `newposts`.
 First, check status:
 
     $ git status
+    $ git pull
 
 Then add and push the commits
 
@@ -57,6 +58,17 @@ Then add and push the commits
     $ git commit -m "new blog post draft"
     $ git push -u origin newposts
 
+## Error on Git push
+
+You might get this error if there are conflicts
+
+    ! [rejected]        newposts -> newposts (fetch first)
+    error: failed to push some refs to 'https://github.com/...
+    hint: Updates were rejected because the remote contains work that you do
+    hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: (e.g., 'git pull ...') before pushing again.
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ## Create a pull request (2nd Github account)
 
@@ -78,6 +90,7 @@ Login to the Main Github account:
 * Review if a pull request was sent.
 * If there are no conflicts, merge the commit into master.
 
+
 ## SSH to from Development to Server
 
 This is how I [remote access Linux](https://www.tomordonez.com/remote-access-linux-fedora.html).
@@ -86,29 +99,38 @@ From my Local computer, I SSH into my LAN server using the server's IP address.
 
     $ ssh server-IP
 
-I attach to my Server tmux environment. Using already a Local tmux, inside Server tmux I have to use the prefix twice `Ctrl+a Ctrl+a` before any binding.
+I attach to my Server tmux environment:
+
+    (server)$ tmuxinator tom
+
+Using already a Local tmux, inside Server tmux I have to use the prefix twice `Ctrl+a Ctrl+a` before any binding.
 
 Then I pull the changes and publish the blog.
 
-    $ git pull
-    $ make html && make publish
-    
+    (server)$ git pull
+    (server)$ make html && make publish
+
 ## Publishing the blog in Server
 
 Once I generate the static pages, I just follow my usual process. Push the HTML output.
 
-    $ cd output
-    $ git add .
-    $ git commit -m "new post"
-    $ git push -u origin master
+    (server)$ cd output
+    (server)$ git add .
+    (server)$ git commit -m "new post"
+    (server)$ git push -u origin master
 
 Then push the source.
 
-    $ cd ..
-    $ git add .
-    $ git commit -m "new post"
-    $ git push -u origin master
+    (server)$ cd ..
+    (server)$ git add .
+    (server)$ git commit -m "new post"
+    (server)$ git push -u origin master
 
 ## Exit server
 
-When the website is published into Github pages. Simply exit the SSH.
+When the website is published into Github pages. Detach from tmux `Ctrl+a Ctrl+a + D`.
+
+Then exit:
+
+    (server)$ exit
+    $
