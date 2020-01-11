@@ -13,11 +13,11 @@ What is the best time to run? According to science it depends on the ozone level
 
 ## The best time to run in San Francisco is at 6am.
 
-![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.jpg)
+![Best time to run in San Francisco]({static}/images/ozone-sf-2016.jpg)
 
 ## The best time to run in Miami is at 6am or 7am but not at noon.
 
-![Best time to run in Miami]({filename}/images/ozone-miami-2016.jpg)
+![Best time to run in Miami]({static}/images/ozone-miami-2016.jpg)
 
 I studied ozone levels from a data set that showed hourly measurements of ozone levels for different cities in the US for 2016.
 
@@ -38,15 +38,15 @@ Bad ozone is due to...drum roll...fossil fuel burning.
 
 ## Example of fossil fuel burning
 
-![Fossil fuel burning]({filename}/images/ozone-factory-bad.jpg)
+![Fossil fuel burning]({static}/images/ozone-factory-bad.jpg)
 
 ## Factories burning fossil fuel
 
-![Factories burning fossil fuel]({filename}/images/ozone-factory-very-bad.jpg)
+![Factories burning fossil fuel]({static}/images/ozone-factory-very-bad.jpg)
 
 ## Cars in traffic burning fossil fuel
 
-![Cars burning fossil fuel]({filename}/images/ozone-traffic-bad.jpg)
+![Cars burning fossil fuel]({static}/images/ozone-traffic-bad.jpg)
 
 ## Data About Ozone Levels
 
@@ -110,11 +110,11 @@ But how do you set them up if you haven't loaded the data?
 
 The data source should have a description of the data. In this case there is more information about this data set on the <a href="http://aqsdr1.epa.gov/aqsweb/aqstmp/airdata/FileFormats.html#_hourly_data_files" target="_blank">EPA website</a>.
 
-![Ozone Data Set Format]({filename}/images/ozone-data-set-format-1.png)
+![Ozone Data Set Format]({static}/images/ozone-data-set-format-1.png)
 
-![Ozone Data Set Format]({filename}/images/ozone-data-set-format-2.png)
+![Ozone Data Set Format]({static}/images/ozone-data-set-format-2.png)
 
-![Ozone Data Set Format]({filename}/images/ozone-data-set-format-3.png)
+![Ozone Data Set Format]({static}/images/ozone-data-set-format-3.png)
 
 Here is the line to load the `CSV` into the object `ozone`.
 
@@ -311,7 +311,7 @@ I learned that the EPA has an `AQI` calculator to convert from ppb to AQI (air q
 
 In the AQI calculator you have a few choices as shown here:
 
-![AQI air quality index calculator]({filename}/images/aqi-calculator-ppb-to-aqi.png)
+![AQI air quality index calculator]({static}/images/aqi-calculator-ppb-to-aqi.png)
 
 * Select a pollutant: O3 - Ozone (8hr avg) or (1hr avg)
 * Units required: ppb
@@ -367,7 +367,7 @@ Converted to AQI results in `276` aka "Very Unhealthy" and very close to "Hazard
 
 After a quick Google search I found that Jefferson county is amongst the top most polluted counties in the US. Yikes!
 
-![Air quality in Jefferson County, Alabama]({filename}/images/jefferson-county-alabama.png)
+![Air quality in Jefferson County, Alabama]({static}/images/jefferson-county-alabama.png)
 
 I read on Wikipedia that before Detroit. This county was the largest bankruptcy in the US with corruption being a big cause. Not sure if there is a correlation between corruption and air quality level.
 
@@ -399,7 +399,7 @@ Then created a view:
 
     > View(florida.counties)
 
-![Florida Counties]({filename}/images/florida-counties.png)
+![Florida Counties]({static}/images/florida-counties.png)
 
 On the view I saw they had it as `Miami-Dade`.
 
@@ -554,7 +554,7 @@ Create a plot with this object and add titles:
 
 ## Best Time To Run in Miami
 
-![Best time to run in Miami]({filename}/images/ozone-miami-2016.jpg)
+![Best time to run in Miami]({static}/images/ozone-miami-2016.jpg)
 
     > summary(ozone.miami.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -587,7 +587,7 @@ Looking at the ozone levels in Miami:
      main = "Best Time to Run in DC", 
      xlab = "Hour", ylab = "Ozone level in ppm")
 
-![Best time to run in Washington DC]({filename}/images/ozone-dc-2016.jpg)
+![Best time to run in Washington DC]({static}/images/ozone-dc-2016.jpg)
 
     > summary(ozone.dc.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -618,7 +618,7 @@ Ozone levels in Washington DC:
     "Best Time to Run in San Francisco", 
     xlab = "Hour", ylab = "Ozone level in ppm")
 
-![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.jpg)
+![Best time to run in San Francisco]({static}/images/ozone-sf-2016.jpg)
 
     > summary(ozone.sf.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -633,7 +633,7 @@ Ozone levels in San Francisco:
 
 ## Best Time to Run in Los Angeles
 
-![Best time to run in Los Angeles]({filename}/images/ozone-la-2016.jpg)
+![Best time to run in Los Angeles]({static}/images/ozone-la-2016.jpg)
 
     > summary(ozone.la.2016$Sample.Measurement)
         Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 

@@ -9,7 +9,7 @@ Summary: These are my top 5 Python scripts I use for researching and sourcing da
 
 These are my top 5 Python scripts I use for researching and sourcing data.
 
-![The Top 5 Python Scripts for Sourcing]({filename}/images/top-5-python-scripts-sourcing.jpg)
+![The Top 5 Python Scripts for Sourcing]({static}/images/top-5-python-scripts-sourcing.jpg)
 
 **Note: Use at your own risk**
 
@@ -432,7 +432,7 @@ If you open the file `example1` in your browser, it looks like this:
 
 <p>&nbsp;</p>
 
-![Python Scripts for Sourcing]({filename}/images/python-script-example.jpg)
+![Python Scripts for Sourcing]({static}/images/python-script-example.jpg)
 
 <p>&nbsp;</p>
 

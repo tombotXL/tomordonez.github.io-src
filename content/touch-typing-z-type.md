@@ -9,7 +9,7 @@ Summary: Learn touch typing with the Z-type game and become ultra-focused.
 
 Learn touch typing with the Z-type game and become ultra-focused. This is a great skill to have if you are learning Linux or a programming language.
 
-![Learn Touch Typing with Z-Type Game]({filename}/images/touch-typing-z-type.jpg)
+![Learn Touch Typing with Z-Type Game]({static}/images/touch-typing-z-type.jpg)
 
 Learn touch typing with 8 fingers to get ultra focused. The left hand is placed on the letters `ASDF`. The right hand is placed on the letters `JKL;`
 
@@ -35,4 +35,4 @@ In the beginning you have to memorize the keyboard, looking down. But eventually
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

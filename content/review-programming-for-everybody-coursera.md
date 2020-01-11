@@ -82,7 +82,7 @@ Also print an error when you don't enter a number and finish when you enter the 
 
 Running the program shows:
 
-![Programming for Everybody in Python from Coursera example]({filename}/images/programming-everybody-python-coursera.jpg)
+![Programming for Everybody in Python from Coursera example]({static}/images/programming-everybody-python-coursera.jpg)
 
 The example uses all the lessons from the course with the exception of the for loop:
 

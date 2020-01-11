@@ -32,7 +32,7 @@ This is the data visualization that we are getting from this **R tutorial using 
 
 The best time to run outside in San Francisco.
 
-![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.jpg)
+![Best time to run in San Francisco]({static}/images/ozone-sf-2016.jpg)
 
 ## A bit more context about Ozone
 
@@ -280,7 +280,7 @@ I learned that the EPA has an `AQI` calculator to convert from ppb to AQI (air q
 
 In the AQI calculator you have a few choices as shown here:
 
-![AQI air quality index calculator]({filename}/images/aqi-calculator-ppb-to-aqi.png)
+![AQI air quality index calculator]({static}/images/aqi-calculator-ppb-to-aqi.png)
 
 * Select a pollutant: O3 - Ozone (8hr avg) or (1hr avg)
 * Units required: ppb
@@ -336,7 +336,7 @@ Converted to AQI results in `276` aka "Very Unhealthy" and very close to "Hazard
 
 After a quick Google search I found that Jefferson county is amongst the top most polluted counties in the US.
 
-![Air quality in Jefferson County, Alabama]({filename}/images/jefferson-county-alabama.png)
+![Air quality in Jefferson County, Alabama]({static}/images/jefferson-county-alabama.png)
 
 ## Exploring the data visualization plots in Rstudio
 
@@ -356,7 +356,7 @@ Then created a view:
 
     > View(florida.counties)
 
-![Florida Counties]({filename}/images/florida-counties.png)
+![Florida Counties]({static}/images/florida-counties.png)
 
 On the view I saw they had it as `Miami-Dade`.
 
@@ -522,7 +522,7 @@ Create a plot with this object and add titles:
     "Best Time to Run in San Francisco", 
     xlab = "Hour", ylab = "Ozone level in ppm")
 
-![Best time to run in San Francisco]({filename}/images/ozone-sf-2016.jpg)
+![Best time to run in San Francisco]({static}/images/ozone-sf-2016.jpg)
 
     > summary(ozone.sf.2016$Sample.Measurement)
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 

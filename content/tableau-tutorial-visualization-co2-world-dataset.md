@@ -9,7 +9,7 @@ Summary: A Tableau tutorial to build a visualization of emissions from a CO2 wor
 
 A Tableau tutorial to build a visualization of emissions from a CO2 world dataset.
 
-![Tableau Tutorial Visualization - Dashboard]({filename}/images/tableau-tutorial-visualization-dashboard.jpg)
+![Tableau Tutorial Visualization - Dashboard]({static}/images/tableau-tutorial-visualization-dashboard.jpg)
 
 This **Tableau tutorial** is based on Tableau Public Overview Video 1 as seen here: https://public.tableau.com/en-us/s/resources
 
@@ -17,11 +17,11 @@ Using Tableau 10.
 
 ## Connect to File > Excel
 
-![Tableau Tutorial Visualization - Connect Excel File]({filename}/images/tableau-tutorial-connect-excel-file.jpg)
+![Tableau Tutorial Visualization - Connect Excel File]({static}/images/tableau-tutorial-connect-excel-file.jpg)
 
 ## Drag the sheet CO2 Data Cleaned
 
-![Tableau Tutorial Visualization - Drag sheet]({filename}/images/tableau-tutorial-drag-sheet.jpg)
+![Tableau Tutorial Visualization - Drag sheet]({static}/images/tableau-tutorial-drag-sheet.jpg)
 
 ## Go to Worksheet.
 
@@ -35,7 +35,7 @@ The measure, latitude is added to rows.
 
 A world map is created with dots labeling each country from the dataset.
 
-![Tableau Tutorial Visualization - World Map]({filename}/images/tableau-tutorial-world-map.jpg)
+![Tableau Tutorial Visualization - World Map]({static}/images/tableau-tutorial-world-map.jpg)
 
 ## Drag a Measure to the canvas
 
@@ -48,7 +48,7 @@ Click on the USA dot. It shows this data:
 
 On the popup click on View Data
 
-![Tableau Tutorial Visualization - View Data]({filename}/images/tableau-tutorial-datapoint-view-data.jpg)
+![Tableau Tutorial Visualization - View Data]({static}/images/tableau-tutorial-datapoint-view-data.jpg)
 
 It has two tabs:
 
@@ -67,7 +67,7 @@ Review Full Data:
 
 Drag `Year` to Filters.
 
-![Tableau Tutorial Visualization - Using Filters]({filename}/images/tableau-tutorial-drag-dimension-year.jpg)
+![Tableau Tutorial Visualization - Using Filters]({static}/images/tableau-tutorial-drag-dimension-year.jpg)
 
 On Filters > Year > Dropdown. Switch from Continuous to Discrete. A new popup shows this Dimension as checkboxes.
 
@@ -137,7 +137,7 @@ Drag CO2 Per Capita to Marks > Color.
 
 Edit the Color from Automatic to Red Black Diverging and select `Reversed`.
 
-![Tableau Tutorial Visualization - Time Series]({filename}/images/tableau-tutorial-visualization-over-time.jpg)
+![Tableau Tutorial Visualization - Time Series]({static}/images/tableau-tutorial-visualization-over-time.jpg)
 
 Here are some interesting things:
 
@@ -161,4 +161,4 @@ On the right margin on the filters, right click on each window and click on Remo
 
 From the bottom left. Go to `Objects` and drag a Text to add a title.
 
-![Tableau Tutorial Visualization - Dashboard]({filename}/images/tableau-tutorial-visualization-dashboard.jpg)
+![Tableau Tutorial Visualization - Dashboard]({static}/images/tableau-tutorial-visualization-dashboard.jpg)

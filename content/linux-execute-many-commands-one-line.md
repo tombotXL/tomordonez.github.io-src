@@ -9,7 +9,7 @@ Summary: Execute many commands in one line in Linux
 
 Execute many commands in one line in Linux
 
-![Linux execute many commands in one line]({filename}/images/linux-execute-many-commands-one-line.jpg)
+![Linux execute many commands in one line]({static}/images/linux-execute-many-commands-one-line.jpg)
 
 Run A then B, even if A fails
 
@@ -25,4 +25,4 @@ Run B only if A fails
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

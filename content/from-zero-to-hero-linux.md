@@ -9,7 +9,7 @@ Summary: From zero to hero in Linux is a tutorial to learn the command line and 
 
 From zero to hero in Linux is a tutorial to learn the command line and basic Linux commands.
 
-![From Zero to Hero in Linux]({filename}/images/from-zero-to-hero-linux.jpg)
+![From Zero to Hero in Linux]({static}/images/from-zero-to-hero-linux.jpg)
 
 This is a great tutorial if you are:
 

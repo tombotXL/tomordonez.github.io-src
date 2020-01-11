@@ -9,7 +9,7 @@ Summary: Follow this process to disable touchscreen on Ubuntu.
 
 Follow this process to **disable touchscreen on Ubuntu**.
 
-![Disable Touchscreen on Ubuntu]({filename}/images/disable-touchscreen-ubuntu.jpg)
+![Disable Touchscreen on Ubuntu]({static}/images/disable-touchscreen-ubuntu.jpg)
 
 Go to the terminal and type `man xinput`
 

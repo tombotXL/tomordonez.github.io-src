@@ -7,7 +7,7 @@ Summary: This is an awesome way for building authentic connections with Github i
 This is an awesome way for building authentic connections with Github if you are learning to code.
 
 <p>&nbsp;</p>
-![Building Authentic Connections]({filename}/images/building-authentic-connections.jpg)
+![Building Authentic Connections]({static}/images/building-authentic-connections.jpg)
 <p>&nbsp;</p>
 
 I have been on a quest to conquer the matrix. I have been studying data science with Python and AWS.
@@ -51,7 +51,7 @@ If you are familiar with the Terminal. This is the Command Prompt in Windows or 
 If I open my Terminal on Linux, it looks like this:
 
 <p>&nbsp;</p>
-![Terminal on Linux]({filename}/images/linux-terminal.jpg)
+![Terminal on Linux]({static}/images/linux-terminal.jpg)
 <p>&nbsp;</p>
 
 Then to open **Vim** I just type this on the Terminal:
@@ -104,7 +104,7 @@ I followed the instructions to install it and found other plugins.
 This is the screenshot on their Github page:
 
 <p>&nbsp;</p>
-![Vundle on Github]({filename}/images/github-vundle.jpg)
+![Vundle on Github]({static}/images/github-vundle.jpg)
 <p>&nbsp;</p>
 
 The screenshot has what looks a configuration file with a lot of plugins.
@@ -127,7 +127,7 @@ You don't have to understand what these plugins do. The goal is that if you are 
 I went to lookup the contributors for `Vundle`.
 
 <p>&nbsp;</p>
-![Vundle Contributors]({filename}/images/github-vundle-contributors.jpg)
+![Vundle Contributors]({static}/images/github-vundle-contributors.jpg)
 <p>&nbsp;</p>
 
 This project has a lot of contributors so at the moment I would like to thank perhaps the top 3.
@@ -135,7 +135,7 @@ This project has a lot of contributors so at the moment I would like to thank pe
 I went to the Github profiles for the top 3 contributors and found their contact info.
 
 <p>&nbsp;</p>
-![Vundle Contributor]({filename}/images/github-contributor-contact.jpg)
+![Vundle Contributor]({static}/images/github-contributor-contact.jpg)
 <p>&nbsp;</p>
 
 ## 4. Send a thank you note.
@@ -143,7 +143,7 @@ I went to the Github profiles for the top 3 contributors and found their contact
 Then I looked them up on Linkedin and sent them a note.
 
 <p>&nbsp;</p>
-![Linkedin invite]({filename}/images/linkedin-invite-note.jpg)
+![Linkedin invite]({static}/images/linkedin-invite-note.jpg)
 <p>&nbsp;</p>
 
 "Hey...(more words here). I installed your program and is awesome (more words here)"
