@@ -50,6 +50,7 @@ I created a new branch called `newposts`.
 First, check status:
 
     $ git status
+    $ git pull
 
 Then add and push the commits
 
@@ -57,6 +58,17 @@ Then add and push the commits
     $ git commit -m "new blog post draft"
     $ git push -u origin newposts
 
+## Error on Git push
+
+You might get this error if there are conflicts
+
+    ! [rejected]        newposts -> newposts (fetch first)
+    error: failed to push some refs to 'https://github.com/...
+    hint: Updates were rejected because the remote contains work that you do
+    hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: (e.g., 'git pull ...') before pushing again.
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ## Create a pull request (2nd Github account)
 
