@@ -9,7 +9,7 @@ Summary: This is a short tutorial to setup a VPN in Linux Fedora
 
 This is a short tutorial to **setup a VPN in Linux** Fedora. Although the same process applies to Ubuntu.
 
-![How To Setup a VPN in Linux Fedora]({filename}/images/how-to-setup-vpn-linux-fedora.jpg)
+![How To Setup a VPN in Linux Fedora]({static}/images/how-to-setup-vpn-linux-fedora.jpg)
 
 ## Open an account with Hide.me VPN
 
@@ -21,7 +21,7 @@ Once logged in to the members dashboard. Go to the left menu and click on Server
 
 <p>&nbsp;</p>
 
-![Setup a VPN in Linux]({filename}/images/how-to-setup-vpn-linux.gif)
+![Setup a VPN in Linux]({static}/images/how-to-setup-vpn-linux.gif)
 
 <p>&nbsp;</p>
 
@@ -33,7 +33,7 @@ Go to OpenVPN Configuration. Click on Linux. This will download a zip file.
 
 <p>&nbsp;</p>
 
-![OpenVPN Configuration]({filename}/images/openvpn-configuration.gif)
+![OpenVPN Configuration]({static}/images/openvpn-configuration.gif)
 
 <p>&nbsp;</p>
 
@@ -72,7 +72,7 @@ Setup openvpn to use this credentials file. Previously unzipping the file `Locat
 
     sudo openvpn --config /etc/openvpn/Location.ovpn
 
-![OpenVPN Start]({filename}/images/start-openvpn.gif)
+![OpenVPN Start]({static}/images/start-openvpn.gif)
 
 ## Test if VPN is working
 
@@ -92,7 +92,7 @@ If there is a prompt then type:
 
     sudo killall openvpn
 
-![OpenVPN Stop]({filename}/images/stop-openvpn.gif)
+![OpenVPN Stop]({static}/images/stop-openvpn.gif)
 
 ## Alternative Way of Adding the VPN
 

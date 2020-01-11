@@ -9,7 +9,7 @@ Summary: This is a very interesting tool to preview your site before it goes liv
 
 This is a very interesting tool to preview your site before it goes live.
 
-![Test Your Site Before It Goes Live]({filename}/images/test-your-site-before-it-goes-live.jpg)
+![Test Your Site Before It Goes Live]({static}/images/test-your-site-before-it-goes-live.jpg)
 
 I have been using this tool when migrating sites from one hosting to another.
 
@@ -26,4 +26,4 @@ When you preview the site some things might not display correctly, such as image
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

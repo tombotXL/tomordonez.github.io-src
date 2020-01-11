@@ -7,7 +7,7 @@ Summary: Using reverse whois to find contact information...for research purposes
 Using reverse whois to find contact information...for research purposes :)
 
 <p>&nbsp;</p>
-![Reverse Whois To Find Contact Information]({filename}/images/reverse-whois-find-contact-information.jpg)
+![Reverse Whois To Find Contact Information]({static}/images/reverse-whois-find-contact-information.jpg)
 <p>&nbsp;</p>
 
 One day...I ran out of the free credits from Lusha.
@@ -274,7 +274,7 @@ Then you can use the script like this:
 The output for this example looks like this:
 
 <p>&nbsp;</p>
-![Reverse Whois Jack Dorsey]({filename}/images/reverse-whois-jack-dorsey.jpg)
+![Reverse Whois Jack Dorsey]({static}/images/reverse-whois-jack-dorsey.jpg)
 <p>&nbsp;</p>
 
 Then you can `whois` one of the results:
@@ -320,7 +320,7 @@ The result of a `whois` for a `.us` top level domain will always contain the reg
 In this case I found the contact info for that person.
 
 <p>&nbsp;</p>
-![Reverse Whois OMG]({filename}/images/reverse-whois-omg.gif)
+![Reverse Whois OMG]({static}/images/reverse-whois-omg.gif)
 <p>&nbsp;</p>
 
 Now you are an expert at WHOIS and reverse WHOIS to find useful data about domains.

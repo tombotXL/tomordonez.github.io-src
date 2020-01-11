@@ -11,7 +11,7 @@ Summary: Linkedin XRay search with Googler or Google search anything in a progra
 
 <p>&nbsp;</p>
 
-![Linkedin X-Ray Search with Googler]({filename}/images/linkedin-xray-search-googler.jpg)
+![Linkedin X-Ray Search with Googler]({static}/images/linkedin-xray-search-googler.jpg)
 
 
 ## Source
@@ -57,7 +57,7 @@ To show the help documentation:
 
     $ ./googler -h
 
-![Xray Linkedin search with Googler]({filename}/images/xray-linkedin-search-googler.gif)
+![Xray Linkedin search with Googler]({static}/images/xray-linkedin-search-googler.gif)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -155,7 +155,7 @@ For example:
 
     $ ./googler --site linkedin.com/in 'data scientist'
 
-![Xray Linkedin search data scientist]({filename}/images/xray-linkedin-search-data-scientist.gif)
+![Xray Linkedin search data scientist]({static}/images/xray-linkedin-search-data-scientist.gif)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -222,7 +222,7 @@ Read my tutorial to <a href="https://www.tomordonez.com/create-a-regex-macro-in-
 
 You can use this macro to convert the Linkedin Xray search result to a CSV file.
 
-![Xray Linkedin search sublime macro]({filename}/images/xray-linkedin-search-sublime-macro.gif)
+![Xray Linkedin search sublime macro]({static}/images/xray-linkedin-search-sublime-macro.gif)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -291,7 +291,7 @@ For the `Commands-User`
         }
     ]
 
-![Xray Linkedin search sublime macro]({filename}/images/linkedin-xray-search-csv-file.gif)
+![Xray Linkedin search sublime macro]({static}/images/linkedin-xray-search-csv-file.gif)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>

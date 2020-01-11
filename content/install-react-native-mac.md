@@ -9,7 +9,7 @@ Summary: Tutorial to install react native on Mac
 
 Follow this simple tutorial to install React Native on Mac.
 
-![Install React Native on Mac]({filename}/images/install-react-native-mac.jpg)
+![Install React Native on Mac]({static}/images/install-react-native-mac.jpg)
 
 ## Install Node
 

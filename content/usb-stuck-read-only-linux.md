@@ -9,7 +9,7 @@ Summary: Fixing a usb stuck in read only in Linux
 
 Fixing a usb stuck in read only in Linux
 
-![USB Stuck in Read Only in Linux]({filename}/images/usb-stuck-read-only-linux.jpg)
+![USB Stuck in Read Only in Linux]({static}/images/usb-stuck-read-only-linux.jpg)
 
 As seen <a href="https://askubuntu.com/questions/563764/usb-devices-showing-as-read-only" target="_blank">here</a>.
 

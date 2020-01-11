@@ -9,7 +9,7 @@ Summary: A short tutorial about Python context manager: "with" statement.
 
 A short tutorial about Python context manager: "with" statement.
 
-![Python Context Manager]({filename}/images/python-context-manager.jpg)
+![Python Context Manager]({static}/images/python-context-manager.jpg)
 
 Sources:
 

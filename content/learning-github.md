@@ -92,7 +92,7 @@ Then I pull the changes and publish the blog.
 
     $ git pull
     $ make html && make publish
-
+    
 ## Publishing the blog in Server
 
 Once I generate the static pages, I just follow my usual process. Push the HTML output.

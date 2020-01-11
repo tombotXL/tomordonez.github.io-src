@@ -9,7 +9,7 @@ Summary: This is a short tutorial about logging in Python.
 
 This is a short tutorial about logging in Python.
 
-![Python Logging Tutorial]({filename}/images/python-logging-tutorial.jpg)
+![Python Logging Tutorial]({static}/images/python-logging-tutorial.jpg)
 
 Follow the official documentation about logging <a href="https://docs.python.org/3/library/logging.html" target="_blank">here</a>.
 

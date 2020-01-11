@@ -22,4 +22,4 @@ Instead I decided on a static generator based on Python. I asked suggestions fro
 This is Pelican on Github pages.
 
 ## If you have questions or comments please add them below
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

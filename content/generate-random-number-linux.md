@@ -9,7 +9,7 @@ Summary: Follow this tutorial to generate a random number with Linux and Bash
 
 Follow this tutorial to generate a random number with Linux and Bash.
 
-![Generate a Random Number in Linux]({filename}/images/generate-random-number-linux.jpg)
+![Generate a Random Number in Linux]({static}/images/generate-random-number-linux.jpg)
 
 This is what I was doing to give you some context.
 

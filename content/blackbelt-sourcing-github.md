@@ -9,7 +9,7 @@ Summary: Are you a sourcer or recruiter looking for talent on Github?
 
 Are you a sourcer or recruiter looking for talent on Github?
 
-![Blackbelt Sourcing on Github]({filename}/images/blackbelt-sourcing-github.jpg)
+![Blackbelt Sourcing on Github]({static}/images/blackbelt-sourcing-github.jpg)
 
 (This article is a work in progress...)
 

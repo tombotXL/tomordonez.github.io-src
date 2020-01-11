@@ -9,7 +9,7 @@ Summary: Ubuntu Wifi disconnected after sleep. This is how I fixed this problem.
 
 Ubuntu Wifi disconnected after sleep. This is how I fixed this problem.
 
-![Ubuntu Wifi Network Disconnected After Sleep]({filename}/images/ubuntu-wifi-network-disconnected-after-sleep.jpg)
+![Ubuntu Wifi Network Disconnected After Sleep]({static}/images/ubuntu-wifi-network-disconnected-after-sleep.jpg)
 
 I got a Thinkpad and I thought I switched off the Wifi. The right side of the laptop has a switch to turn the Wifi on and off.
 
