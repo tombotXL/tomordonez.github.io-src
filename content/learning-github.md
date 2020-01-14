@@ -62,6 +62,10 @@ As seen [here](https://stackoverflow.com/questions/16955980/git-merge-master-int
     $ git checkout newposts
     $ git merge master
 
+Resolve conflicts then commit:
+
+    $ git commit -m "merged master"
+
 Then add and push the commits
 
     $ git add .
