@@ -50,7 +50,17 @@ I created a new branch called `newposts`.
 First, check status:
 
     $ git status
-    $ git pull
+
+If new changes were made on the server, then sync the forked repo. As seen on [installing a static website with Python](https://www.tomordonez.com/make-static-website-python-github-pages.html). Follow the section "Fork and sync a local with a remote repo."
+
+    $ git fetch upstream
+    $ git checkout master
+    $ git merge upstream/master
+
+As seen [here](https://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch). To merge `master` with `newposts`:
+
+    $ git checkout newposts
+    $ git merge master
 
 Then add and push the commits
 
