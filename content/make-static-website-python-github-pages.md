@@ -7,6 +7,8 @@ Author: Tom Ordonez
 Status: published
 Summary: A tutorial to make a static website using Python and Github Pages. It uses the Pelican static website generator and Cloudflare.
 
+**Updated Jan 11, 2020**
+
 Follow this tutorial to **make a static website** with Python and Github Pages. It uses the Pelican static website generator. Hosted with Github pages using Cloudflare DNS and CDN.
 
 I followed this procedure to setup the blog using Python and Pelican.
@@ -257,6 +259,25 @@ To stop the server use `Ctrl+C`.
 
 The draft to published workflow works well if you want others to review your content without having these posts appear on the home page. Otherwise just set the `Status` to `published`.
 
+## Create a blog post from a template
+
+It's pretty hard to remember the header for each blog post. I created a markdown template called `new_post_template.md` in my working directory and added this to `.gitignore`. Then I create a new blog post by copying this template such as:
+
+    $ cp new_post_template.md content/name_of_new_blogpost.md
+
+The template has this content:
+
+    Title: Add Title
+    Date: 2019-04-18 20:00
+    Category: Linux
+    Tags: tag1, tag2
+    Slug: title-seo-with-dashes
+    Author: Tom Ordonez
+    Status: published
+    Summary: Short SEO summary.
+
+    Add content here.
+
 ## Create a page
 
 You can create static pages such as the typical `about` page.
@@ -286,9 +307,9 @@ If you want to open the hyperlink in a new tab/window. This cannot be done with 
 
 Use this notation to add images:
 
-    ![exclamation point and bracket for text]({filename}/images/image-file.jpg)
+    ![exclamation point and bracket for text]({static}/images/image-file.jpg)
 
-On the notation above you literally have to put `{filename}`. Then the location of the image, which can be `jpg` or `png`.
+On the notation above you literally have to put `{static}`. Then the location of the image, which can be `jpg` or `png`.
 
 Formatting code, use:
 
@@ -334,6 +355,24 @@ Now you have to add something to the `pelicanconf.py` config file:
 Depending on the theme there might be a requirement to specify the css file. In which case you would need to add something like this:
 
     COLOR_SCHEME_CSS = 'awesome.css'
+
+## Troubleshooting: gitmodules, multiple configurations found
+
+You might get this error when pushing after making theme changes:
+
+    gitmodules, multiple configurations found for 'submodule.themes/name-of-theme.path'. Skipping second one!
+
+Open your `.gitmodules` file. In my case it looked like this:
+
+    [submodule "themes/medius"]
+    path = themes/medius
+    url = https://github.com/onur/medius.git
+
+    [submodule "themes/pelican-alchemy"]
+    path = themes/pelican-alchemy
+    url = https://github.com/nairobilug/pelican-alchemy
+
+My current theme is `pelican-alchemy`. I removed the first three lines with the other theme references.
 
 ## Deploy to Github
 
@@ -383,7 +422,7 @@ Browse to you blog:
 
 This requires to make some changes to Github, your DNS provider and Cloudflare
 
-## Change the DNS settings
+Change the DNS settings where you have your website registered.
 
 Create these records:
 
@@ -474,15 +513,7 @@ Now deploy the source.
 
     env $ git push -u origin master
 
-## Setup SEO
-
-Create a `robots.txt` file.
-
-Create a `favicon.ico` file.
-
-Create a `sitemap.xml` file.
-
-But first follow this. These files will be created later.
+## Setup SEO: robots.txt, favicon.ico, sitemap.xml
 
 Modify your `pelicanconf.py` file so it looks like this:
 
@@ -524,6 +555,8 @@ Modify your `pelicanconf.py` file so it looks like this:
 	            }
 	}
 
+## Create the robots.txt
+
 Go to your Pelican root directory and create the `robots.txt` file:
 
     env $ vim content/extra/robots.txt
@@ -532,11 +565,17 @@ Add this line to the file:
 
     User-agent: *
 
+
+## Create the favicon.ico
+
 Go to the directory `content/extra/` and add a `favicon.ico` image.
 
 Create a directory for the plugins in the Pelican root directory:
 
     env $ mkdir pelican-plugins
+
+
+## Create the sitemap
 
 Create a directory for the sitemap plugin:
 
@@ -555,6 +594,8 @@ Generate the site:
     env $ make publish
 
 Verify that the `sitemap.xml` was generated inside the `output` directory.
+
+## Git Push SEO changes to Github
 
 Deploy the output.
 
@@ -578,7 +619,7 @@ Now deploy the source.
 
     env $ git push -u origin master
 
-## Troubleshooting
+## Troubleshooting: using `{filename}` instead of `{static}`
 
 I recently had issues with my blog when publishing posts. After calling `make html && make publish`. I started getting errors that I was using `{filename}` instead of `{static}`. My mistake. I had the incorrect syntax or perhaps just outdated in multiple posts, when linking to static images inside the `content/images` directory.
 
@@ -590,3 +631,80 @@ Following <a href="https://stackoverflow.com/questions/11392478/how-to-replace-a
     $ sed -i 's/filename/static/g' *.md
 
 Like magic, it updated all the files with the correct syntax. I also had to run the same command inside `content/pages` for all `.md` files.
+
+## Fork and sync a local with a remote repo
+
+As seen on my [learning Github](https://www.tomordonez.com/learning-github.html) blog post. I have a setup to create blog posts on one machine and deploy the changes from a local server. I do this to experiment and learn with a sort of Git/Github lab.
+
+The local server has installed the static web server in production, following all the steps as mentioned before. It's linked to a sort of master Github account:
+
+`Master repo: https://github.com/original_owner/original_repo.git`
+
+The development machine has a forked repo from the master repo and it uses a different Github account.
+
+`Forked repo: https://github.com/your_username/your_fork.git`
+
+Configure a remote for a fork as seen [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork)
+
+Review the remotes you have:
+
+    $ git remove -v
+    > origin  https://github.com/your_username/your_fork.git (fetch)
+    > origin  https://github.com/your_username/your_fork.git (push)
+
+Create a remote upstream repo with the original
+
+    $ git remote add upstream https://github.com/original_owner/original_repo.git
+
+Check that the new remote was created
+
+    $ git remote -v
+
+Sync your fork with the original upstream as seen [here](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
+    $ git fetch upstream
+
+It creates a new branch that stores `master` into `upstream/master`:
+
+    >  * [new branch]      master     -> upstream/master
+
+Checkout the local `master` branch:
+
+    $ git checkout master
+
+Merge the changes from `upstream/master` into local `master`:
+
+    $ git merge upstream/master
+
+## Troubleshooting: Merging is not possible because you have unmerged files
+
+When running:
+
+    $ git merge upstream/master
+
+You might get this error:
+
+    error: Merging is not possible because you have unmerged files.                                                                                                              
+    hint: Fix them up in the work tree, and then use 'git add/rm <file>'                                                                                                         
+    hint: as appropriate to mark resolution and make a commit.                                                                                                                   
+    fatal: Exiting because of an unresolved conflict.
+
+Check:
+
+    $ git status
+
+I had these:
+
+    Unmerged paths:
+      (use "git add <file>..." to mark resolution)
+            both modified:   .gitignore
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            .gitmodules_bk
+            new_post_template.md
+
+I added these files and committed the changes from the `git fetch upstream`
+
+    $ git add .
+    $ git commit "merged upstream/master"

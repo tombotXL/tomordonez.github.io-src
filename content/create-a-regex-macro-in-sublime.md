@@ -9,7 +9,7 @@ Summary: Follow this tutorial to create a regex macro in Sublime.
 
 Follow this tutorial to create a regex macro in Sublime.
 
-![Create a Regex Macro in Sublime]({filename}/images/create-a-regex-macro-in-sublime.jpg)
+![Create a Regex Macro in Sublime]({static}/images/create-a-regex-macro-in-sublime.jpg)
 
 ## Install Sublime
 

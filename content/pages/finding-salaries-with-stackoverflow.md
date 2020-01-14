@@ -7,7 +7,7 @@ Summary: Finding salaries with StackOverflow using their salary calculator or us
 Finding salaries with StackOverflow using their salary calculator or use their Kaggle dataset to get insights.
 
 <p>&nbsp;</p>
-![Finding Salaries With StackOverflow]({filename}/images/finding-salaries-with-stackoverflow.jpg)
+![Finding Salaries With StackOverflow]({static}/images/finding-salaries-with-stackoverflow.jpg)
 <p>&nbsp;</p>
 
 As more states ban salary-related questions there is an increased need for finding salary data. There are a few sources where to get this data:
@@ -121,7 +121,7 @@ The tool is based on their annual developer survey and it has the following fiel
 * Technologies
 
 <p>&nbsp;</p>
-![StackOverflow Salary Calculator]({filename}/images/stackoverflow-salary-calculator.jpg)
+![StackOverflow Salary Calculator]({static}/images/stackoverflow-salary-calculator.jpg)
 <p>&nbsp;</p>
 
 For Role, you can select from the following:
@@ -160,7 +160,7 @@ The StackOverflow salary calculator is a great tool to get all sorts of combinat
 If you want to analyze a larger dataset, you should get the data from Kaggle.
 
 <p>&nbsp;</p>
-![StackOverflow Salary Kaggle]({filename}/images/stackoverflow-salary-kaggle.jpg)
+![StackOverflow Salary Kaggle]({static}/images/stackoverflow-salary-kaggle.jpg)
 <p>&nbsp;</p>
 
 These are some details about this dataset:
@@ -204,7 +204,7 @@ Looking at one of the discussions. Someone did an exploratory data analysis to g
 The top programming languages are Javascript, Java, C#, Python, PHP
 
 <p>&nbsp;</p>
-![StackOverflow Salary Kaggle Languages]({filename}/images/stackoverflow-salary-kaggle-languages.jpg)
+![StackOverflow Salary Kaggle Languages]({static}/images/stackoverflow-salary-kaggle-languages.jpg)
 <p>&nbsp;</p>
 
 

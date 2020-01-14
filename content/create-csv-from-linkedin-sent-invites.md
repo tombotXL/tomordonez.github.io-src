@@ -9,7 +9,7 @@ Summary: Follow this process to create a CSV file from Linkedin sent invites.
 
 Follow this process to create a CSV file from Linkedin sent invites.
 
-![Create a CSV file from Linkedin Sent Invites]({filename}/images/create-csv-from-linkedin-sent-invites.jpg)
+![Create a CSV file from Linkedin Sent Invites]({static}/images/create-csv-from-linkedin-sent-invites.jpg)
 
 ## Objective
 
@@ -188,4 +188,4 @@ This Python script opens and closes the profiles but it's missing Linkedin authe
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

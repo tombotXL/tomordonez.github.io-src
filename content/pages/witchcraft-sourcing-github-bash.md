@@ -11,14 +11,14 @@ Feel free to say hi if you see me around or let's hangout.
 You can also connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>.
 <p>&nbsp;</p>
 
-![Tom Ordonez at Sourcecon]({filename}/images/tomordonez-sourcecon-2017.jpg)
+![Tom Ordonez at Sourcecon]({static}/images/tomordonez-sourcecon-2017.jpg)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 ## Check it out on Wednesday, September 27 • 2:25pm - 3:00pm under the Programmers track
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/tomordonez-witchcraft-sourcing-sourcecon.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/tomordonez-witchcraft-sourcing-sourcecon.jpg)
 
 ## This is a preview of witchcraft sourcing with Github and Bash
 
@@ -30,7 +30,7 @@ What you will learn from this awesome story:
 This is a preview of what the CSV looks like:
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-csv-details.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-csv-details.jpg)
 
 ## Crash Course using the Terminal
 
@@ -112,13 +112,13 @@ It will create a file called "browsers.txt" with computer processes, then filter
 For example: Airbnb/Javascript
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-airbnb-js.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-airbnb-js.jpg)
 
 Create a list of all contributors and add them to a file called `input.txt`.
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-input.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-input.jpg)
 
 Create a Bash script called `awesome.sh` and add this:
 
@@ -148,7 +148,7 @@ This file has HTML code.
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output.jpg)
 
 ## Cleaning the HTML file
 
@@ -160,7 +160,7 @@ Download the editor `Sublime Text` to do this operation.
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex1.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex1.jpg)
 
 Use the shortcut `Ctrl+H` to open Search and Replace.
 
@@ -168,55 +168,55 @@ Enable the buttons for `regular expressions` and `case sensitive`.
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex2.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex2.jpg)
 
 Replace commas with semicolons. Otherwise you will go insane trying to put the commas in the CSV. Therefore called comma separated values :)
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex3.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex3.jpg)
 
 Remove all blank space from the beginning of each line:
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex4.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex4.jpg)
 
 Find the pattern where each Github profile starts and ends.
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex5.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex5.jpg)
 
 Remove new lines to move all lines into a single line
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex6.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex6.jpg)
 
 It looks like this now:
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex7.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex7.jpg)
 
 Break the lines with the pattern you found where a profile ends and the other starts:
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex8.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex8.jpg)
 
 It looks like this now:
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-regex9.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-regex9.jpg)
 
 A few more replacements and the data will look like this:
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-clean-csv.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-clean-csv.jpg)
 
 ## Those are not emails
 
@@ -230,7 +230,7 @@ We are going to decode them :)
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-quit.gif)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-quit.gif)
 
 Please don't quit just yet we are almost there.
 
@@ -262,7 +262,7 @@ You will get a file with emails:
 
 <p>&nbsp;</p>
 
-![Witchcraft Sourcing at Sourcecon]({filename}/images/github-sourcing-tomordonez-profiles-output-emails.jpg)
+![Witchcraft Sourcing at Sourcecon]({static}/images/github-sourcing-tomordonez-profiles-output-emails.jpg)
 
 ## Connect with me on <a href="https://www.linkedin.com/in/tomordonez/" target="_blank">Linkedin</a>
-![Find me on Linkedin Tom Ordonez]({filename}/images/contact-tomordonez-linkedin.gif)
+![Find me on Linkedin Tom Ordonez]({static}/images/contact-tomordonez-linkedin.gif)

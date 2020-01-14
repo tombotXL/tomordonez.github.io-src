@@ -7,7 +7,7 @@ Summary: A tutorial to scrape data from Facebook pages for research purposes.
 This is a tutorial to **scrape data from Facebook pages** for research purposes.
 
 <p>&nbsp;</p>
-![Scrape Data From Facebook Page Posts]({filename}/images/scrape-data-from-facebook-pages.jpg)
+![Scrape Data From Facebook Page Posts]({static}/images/scrape-data-from-facebook-pages.jpg)
 <p>&nbsp;</p>
 
 I have been working with Facebook pages for a long time to create audiences. My process is setting up the templates, creating and automating content, generating likes, create custom audiences, facebook ads, landing pages and conversions with automated marketing funnels.
@@ -65,7 +65,7 @@ If we get very granular. The most basic data that you get from posting content o
 In this example. This post reached about 10.5K people. Has 343 likes, 42 shares and 26 comments.
 
 <p>&nbsp;</p>
-![Facebook analytics for a post]({filename}/images/facebookAnalyticsPost.jpg)
+![Facebook analytics for a post]({static}/images/facebookAnalyticsPost.jpg)
 <p>&nbsp;</p>
 
 Here are more details about this post analytics:
@@ -133,13 +133,13 @@ For this you need to have a Facebook developer account. Just go <a href="https:/
 Then create a new app.
 
 <p>&nbsp;</p>
-![Facebook create app id]({filename}/images/facebook-create-app-id.jpg)
+![Facebook create app id]({static}/images/facebook-create-app-id.jpg)
 <p>&nbsp;</p>
 
 Open the app and lookup the `App ID` and `App Secret`.
 
 <p>&nbsp;</p>
-![Facebook get App ID]({filename}/images/facebook-app-id.jpg)
+![Facebook get App ID]({static}/images/facebook-app-id.jpg)
 <p>&nbsp;</p>
 
 ## Setup: Get the Facebook Page ID
@@ -149,7 +149,7 @@ For example...
 Sometimes I get ideas from this Facebook page.
 
 <p>&nbsp;</p>
-![Facebook Page Example]({filename}/images/facebook-page-example.jpg)
+![Facebook Page Example]({static}/images/facebook-page-example.jpg)
 <p>&nbsp;</p>
 
 The `ID` for this page is `ProgrammersCreateLife`.
@@ -167,7 +167,7 @@ Then you can edit this file with your favorite editor. In my case vim:
 This is what the section of the code looks like:
 
 <p>&nbsp;</p>
-![Facebook Page Post Setup]({filename}/images/fb-page-post-code-setup.jpg)
+![Facebook Page Post Setup]({static}/images/fb-page-post-code-setup.jpg)
 <p>&nbsp;</p>
 
 ## Run the script
@@ -179,7 +179,7 @@ Running the script is simple:
 This is what the output looks like:
 
 <p>&nbsp;</p>
-![Facebook Page Post Output]({filename}/images/fb-page-post-code-output.jpg)
+![Facebook Page Post Output]({static}/images/fb-page-post-code-output.jpg)
 <p>&nbsp;</p>
 
 You can interrupt the process with `Ctrl+C`.
@@ -199,7 +199,7 @@ This creates a CSV file with these columns:
 This is how the file looks:
 
 <p>&nbsp;</p>
-![Facebook Page Post CSV]({filename}/images/fb-page-post-csv.gif)
+![Facebook Page Post CSV]({static}/images/fb-page-post-csv.gif)
 <p>&nbsp;</p>
 
 ## Using this data

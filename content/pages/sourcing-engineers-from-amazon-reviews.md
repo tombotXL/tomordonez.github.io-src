@@ -28,7 +28,7 @@ This strategy might apply to other fields. But for this one I am going to cover 
 
 # We have the same coding keyboard
 
-![We have the same coding keyboard]({filename}/images/sourcing-engineers-from-amazon-reviews.jpg)
+![We have the same coding keyboard]({static}/images/sourcing-engineers-from-amazon-reviews.jpg)
 
 I am a keyboard geek. I always typed on flat noiseless keyboards.
 
@@ -54,7 +54,7 @@ Here is an interesting example for experienced engineers.
 
 There is a famous programmer called Robert Martin aka Uncle Bob. He has a great series of books on how to refactor code. I got all of them.
 
-![Robert Uncle Bob Martin]({filename}/images/robert-uncle-bob-martin.jpg)
+![Robert Uncle Bob Martin]({static}/images/robert-uncle-bob-martin.jpg)
 
 One of these books is called `Clean Code`. A quick search gives me about 400 reviews.
 
@@ -83,7 +83,7 @@ Let's get more creative.
 
 ## Vim, text editor
 
-![Vim, my favorite text editor]({filename}/images/vim-favorite-text-editor.jpg)
+![Vim, my favorite text editor]({static}/images/vim-favorite-text-editor.jpg)
 
 Vim, my favorite text editor, is only used by programmers. I know this because the barriers of entry for learning this tool are very high.
 

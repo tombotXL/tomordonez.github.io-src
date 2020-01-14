@@ -9,7 +9,7 @@ Summary: Automating tasks with crontab can save you hours of work. This is a sho
 
 Automating tasks with crontab can save you hours of work. This is a short tutorial about cron jobs.
 
-![Automating Tasks with Crontab]({filename}/images/automating-tasks-crontab.jpg)
+![Automating Tasks with Crontab]({static}/images/automating-tasks-crontab.jpg)
 
 ## Automating tasks
 

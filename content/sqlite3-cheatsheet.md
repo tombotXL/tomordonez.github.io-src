@@ -183,7 +183,7 @@ Workflow:
 
 * Add the header
 * Set mode to `CSV`
-* Output to filename
+* Output to static
 * SQL command
 
 If you look at the `.help` you fill find what `.once` means:

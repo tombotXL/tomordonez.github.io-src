@@ -9,7 +9,7 @@ Summary: Follow this process to install Ruby on Ubuntu Linux
 
 Follow this process to install Ruby on Ubuntu Linux
 
-![Installing Ruby on Ubuntu]({filename}/images/installing-ruby-on-ubuntu.png)
+![Installing Ruby on Ubuntu]({static}/images/installing-ruby-on-ubuntu.png)
 
 ## Installing Ruby on Ubuntu
 
@@ -95,4 +95,4 @@ Switch gemsets with:
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

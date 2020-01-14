@@ -27,7 +27,7 @@ Show the line number, the column number, and the relative position of the cursor
 
     set ruler
 
-Show the current filename always.
+Show the current static always.
 
     set laststatus=2
 
@@ -50,7 +50,7 @@ More details:
     set number
     set ruler
     
-    " See the current filename always
+    " See the current static always
     set laststatus=2
     
     " Wrap at 80 characters, don't create a new line
