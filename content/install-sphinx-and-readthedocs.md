@@ -9,13 +9,13 @@ Summary: How to install Sphinx and deploy to ReadTheDocs. Sphinx is used to writ
 
 How to install Sphinx and deploy to ReadTheDocs. Sphinx is used to write technical documentation, books or a structured document.
 
-![Install Sphinx and ReadTheDocs]({filename}/images/install-sphinx-and-readthedocs.jpg)
+![Install Sphinx and ReadTheDocs]({static}/images/install-sphinx-and-readthedocs.jpg)
 
 In a previous article I wrote about moving <a href="https://www.tomordonez.com/from-markdown-to-sphinx-restructuredtext.html">from Markdown to Sphinx reStructuredText</a>.
 
 Go to Readthedocs to see a preview of what I wanted to achieve. It has a table of contents on the sidebar and the content on the right. It's also mobile friendly.
 
-![ReadTheDocs]({filename}/images/readthedocs_preview.jpg)
+![ReadTheDocs]({static}/images/readthedocs_preview.jpg)
 
 This blog uses Markdown but I have been looking to use something else to keep my diary of my studying. I have been taking online classes for the last year and I take notes using Markdown. I started school this semester and wanted to be more organized and have a way to deploy my notes somewhere.
 
@@ -281,7 +281,7 @@ It will read the `index.rst` file in your root path and it will show errors in t
 
 ## Troubleshooting
 
-### Menu options showing filenames instead of caption names
+### Menu options showing statics instead of caption names
 
 When you add the `toctree` to your `index.rst`. Such as:
 

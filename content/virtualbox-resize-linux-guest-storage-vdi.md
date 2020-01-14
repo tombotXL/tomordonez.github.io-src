@@ -13,7 +13,7 @@ This tutorial applies to Virtualbox when Windows is the host and Linux is the VM
 
 <p>&nbsp;</p>
 
-![VirtualBox Resize Linux Guest Storage VDI]({filename}/images/virtualbox-resize-linux-guest-storage-vdi.jpg)
+![VirtualBox Resize Linux Guest Storage VDI]({static}/images/virtualbox-resize-linux-guest-storage-vdi.jpg)
 
 ## Setup
 
@@ -216,4 +216,4 @@ Start the VM and it should start as usual. Verify that all files remain there.
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

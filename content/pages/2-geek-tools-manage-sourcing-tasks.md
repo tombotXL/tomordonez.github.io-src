@@ -16,7 +16,7 @@ These are not 10 awesome tools or one of those articles that has a large number 
 Is "I can has" still a meme? or too old?
 
 <p>&nbsp;</p>
-![I can Has Sourcing Skills?]({filename}/images/i-can-has-sourcing-skills.jpg)
+![I can Has Sourcing Skills?]({static}/images/i-can-has-sourcing-skills.jpg)
 <p>&nbsp;</p>
 
 In sourcing, these are really good skills to have right?
@@ -61,7 +61,7 @@ But if you miss a comma writing code, you might be in trouble.
 Just google this: `semicolon meme`
 
 <p>&nbsp;</p>
-![Semicolon Meme]({filename}/images/semicolon-meme-tomordonez.jpg)
+![Semicolon Meme]({static}/images/semicolon-meme-tomordonez.jpg)
 <p>&nbsp;</p>
 
 You might also get these awesome results:
@@ -99,7 +99,7 @@ If you are on a Mac just search for an app called `Terminal`. It should be insta
 When you open it, the cursor has a dollar sign `$` and maybe the cursor is blinking as if it were expecting you to type something.
 
 <p>&nbsp;</p>
-![Terminal on Linux]({filename}/images/linux-terminal.jpg)
+![Terminal on Linux]({static}/images/linux-terminal.jpg)
 <p>&nbsp;</p>
 
 Hollywood never accurately shows what a real Terminal looks like.
@@ -126,7 +126,7 @@ Programming follows the notion that if you have more than 1 window on the same m
 An old friend had this coding setup:
 
 <p>&nbsp;</p>
-![Coding Setup Matrix Monitors]({filename}/images/coding-setup-matrix-monitors.jpg)
+![Coding Setup Matrix Monitors]({static}/images/coding-setup-matrix-monitors.jpg)
 <p>&nbsp;</p>
 
 One of the most famous tech bloggers CodingHorror has been writing about multiple monitors and productivity for years. There is even university dedicated research about this topic.
@@ -149,7 +149,7 @@ The idea is to break down work in intervals such as:
 * After 4 pomodoros take a longer break, say 20 minutes.
 
 <p>&nbsp;</p>
-![Pomodoro timer hardware]({filename}/images/pomodoro-timer-hardware.jpg)
+![Pomodoro timer hardware]({static}/images/pomodoro-timer-hardware.jpg)
 <p>&nbsp;</p>
 
 During the Pomodoro you only work on that task with no distractions. No switching music, or looking at your phone or looking outside or looking at your email. Just work on that task.
@@ -181,7 +181,7 @@ I will show you 2 awesome tools to manage your sourcing tasks or your coding tas
 For a while I have been using this tool called Taskwarrior and it looks like this:
 
 <p>&nbsp;</p>
-![Taskwarrior to conquer Data Science with Python]({filename}/images/taskwarrior-tomordonez.jpg)
+![Taskwarrior to conquer Data Science with Python]({static}/images/taskwarrior-tomordonez.jpg)
 <p>&nbsp;</p>
 
 I like it because it uses the command line.
@@ -281,7 +281,7 @@ To run the program:
 It will show this:
 
 <p>&nbsp;</p>
-![Pomodoro Timer with Music in Python]({filename}/images/pomodoro-timer-tomordonez.gif)
+![Pomodoro Timer with Music in Python]({static}/images/pomodoro-timer-tomordonez.gif)
 <p>&nbsp;</p>
 
 It asks you the task you want to do. Then it will open a song based on that task and the Pomodoro timer starts counting down.

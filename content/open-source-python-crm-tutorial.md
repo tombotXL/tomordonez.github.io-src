@@ -12,7 +12,7 @@ Summary: Open source Python CRM tutorial. In this tutorial I will show you how t
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-![Open Source CRM in Python]({filename}/images/open-source-crm-python.gif)
+![Open Source CRM in Python]({static}/images/open-source-crm-python.gif)
 
 ## Install PostgreSQL
 
@@ -34,7 +34,7 @@ Summary: Open source Python CRM tutorial. In this tutorial I will show you how t
 
 ## Look at this preview
 
-![Open Source CRM in Python]({filename}/images/open-source-crm-python-linux.gif)
+![Open Source CRM in Python]({static}/images/open-source-crm-python-linux.gif)
 
 ## Start PostgreSQL
 
@@ -64,7 +64,7 @@ Summary: Open source Python CRM tutorial. In this tutorial I will show you how t
 
 ## Look at this preview
 
-![Open Source CRM in Python]({filename}/images/open-source-crm-python-tutorial.gif)
+![Open Source CRM in Python]({static}/images/open-source-crm-python-tutorial.gif)
 
 ## Install Python CRM
 
@@ -254,7 +254,7 @@ It will show you this screen to setup the database:
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python Setup Database]({filename}/images/open-source-crm-python-database.jpg)
+![Open Source CRM in Python Setup Database]({static}/images/open-source-crm-python-database.jpg)
 
 <p>&nbsp;</p>
 
@@ -266,7 +266,7 @@ If you choose the option to load demonstration data, it will send you the `Apps`
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python Setup Apps]({filename}/images/crm-python-open-source-apps.jpg)
+![Open Source CRM in Python Setup Apps]({static}/images/crm-python-open-source-apps.jpg)
 
 <p>&nbsp;</p>
 
@@ -276,7 +276,7 @@ The next screen will be the `Inbox`
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python Inbox]({filename}/images/crm-python-open-source-inbox.jpg)
+![Open Source CRM in Python Inbox]({static}/images/crm-python-open-source-inbox.jpg)
 
 <p>&nbsp;</p>
 
@@ -305,7 +305,7 @@ Use this URL to manage databases:
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python manage database]({filename}/images/crm-python-open-source-manage-db.jpg)
+![Open Source CRM in Python manage database]({static}/images/crm-python-open-source-manage-db.jpg)
 
 <p>&nbsp;</p>
 
@@ -315,7 +315,7 @@ If you hit delete. You will get this screen:
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python delete database]({filename}/images/crm-python-open-source-delete-db.jpg)
+![Open Source CRM in Python delete database]({static}/images/crm-python-open-source-delete-db.jpg)
 
 <p>&nbsp;</p>
 
@@ -323,7 +323,7 @@ When you confirm deletion. You will go back to this screen:
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python new database]({filename}/images/crm-python-open-source-new-db.jpg)
+![Open Source CRM in Python new database]({static}/images/crm-python-open-source-new-db.jpg)
 
 <p>&nbsp;</p>
 
@@ -333,7 +333,7 @@ You will now have a clean install of the CRM.
 
 <p>&nbsp;</p>
 
-![Open Source CRM in Python no data]({filename}/images/crm-python-open-source-no-data.jpg)
+![Open Source CRM in Python no data]({static}/images/crm-python-open-source-no-data.jpg)
 
 <p>&nbsp;</p>
 

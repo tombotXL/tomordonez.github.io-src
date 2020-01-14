@@ -9,7 +9,7 @@ Summary: Follow this to execute a script in a different directory in Linux.
 
 Follow this to execute a script in a different directory in Linux.
 
-![Execute a Script in a Different Directory in Linux]({filename}/images/execute-script-different-directory-linux.jpg)
+![Execute a Script in a Different Directory in Linux]({static}/images/execute-script-different-directory-linux.jpg)
 
 I had a script in `~/Documents/scripts/awesome-script.sh` and wanted to run it inside a different directory `~/Documents/images/awesome-images/`.
 
@@ -29,4 +29,4 @@ This is how it works:
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

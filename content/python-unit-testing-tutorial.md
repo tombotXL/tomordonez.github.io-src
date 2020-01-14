@@ -9,7 +9,7 @@ Summary: This is a tutorial about unit testing in Python.
 
 This is a tutorial about unit testing in Python.
 
-![Python Unit Testing Tutorial]({filename}/images/python-unit-testing-tutorial.jpg)
+![Python Unit Testing Tutorial]({static}/images/python-unit-testing-tutorial.jpg)
 
 Here are some great resources that helped me write this tutorial:
 

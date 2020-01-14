@@ -9,7 +9,7 @@ Summary: This is a tutorial on web scraping with Python. Learn to scrape website
 
 This is a tutorial on web scraping with Python. Learn to scrape websites with Python and BeautifulSoup.
 
-![Scraping one page log file]({filename}/images/scraping_one_page_log_file.gif)
+![Scraping one page log file]({static}/images/scraping_one_page_log_file.gif)
 
 1. Setup web scraping with Python.
 2. Web scraping target and expected result.
@@ -76,7 +76,7 @@ I see that CES is coming up. Found the list of speakers on this page:
 
 Scrolled all the way down. Looks like a lot of speakers.
 
-![CES Speakers]({filename}/images/ces_speakers.gif)
+![CES Speakers]({static}/images/ces_speakers.gif)
 
 Let's open the first speaker in another tab to see what content is there:
 
@@ -93,7 +93,7 @@ Right click, Inspect.
 
 It has `meta name="keywords"`. Do we need these? Maybe.
 
-![CES Speaker Meta Keywords]({filename}/images/ces_speakers_meta_keywords.jpg)
+![CES Speaker Meta Keywords]({static}/images/ces_speakers_meta_keywords.jpg)
 
 It has a `meta name="description"` with a shorter bio.
 
@@ -331,7 +331,7 @@ Then setup the script with `BeautifulSoup`:
 
 Now we need to Inspect the `HTML` on the page and use `soup` methods to extract the data.
 
-![One-page scrape speaker data]({filename}/images/one_page_scrape_speaker_data.jpg)
+![One-page scrape speaker data]({static}/images/one_page_scrape_speaker_data.jpg)
 
 To view `soup` methods you can try:
 
@@ -653,7 +653,7 @@ It will take a few seconds to capture the page and then it will print to the ter
 
 We saved the log file with this name: `one_page_output.log`
 
-![Scraping one page log file]({filename}/images/scraping_one_page_log_file.gif)
+![Scraping one page log file]({static}/images/scraping_one_page_log_file.gif)
 
 It looks like it scraped all the data.
 
@@ -661,7 +661,7 @@ It looks like it scraped all the data.
 
 We named the CSV file: `one_page_leads.csv`.
 
-![Scraped data into CSV]({filename}/images/scraping_one_page_data.gif)
+![Scraped data into CSV]({static}/images/scraping_one_page_data.gif)
 
 It looks good. But the dilemma continues. We don't have the `bios`.
 
@@ -885,7 +885,7 @@ You can open the log file in Sublime to see progress. Or just monitor the file s
 
 Open the CSV file to see the output so far:
 
-![CES Speakers]({filename}/images/scraping_many_pages.gif)
+![CES Speakers]({static}/images/scraping_many_pages.gif)
 
 ## To module or not to module
 

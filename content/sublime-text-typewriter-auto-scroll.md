@@ -9,7 +9,7 @@ Summary: Sublime text typewriter mode and autoscroll in Sublime Text 3
 
 How to set **Sublime text typewriter mode** and autoscroll in Sublime Text 3
 
-![Sublime Text Typewriter Autoscroll]({filename}/images/sublime-text-typewriter-auto-scroll.gif)
+![Sublime Text Typewriter Autoscroll]({static}/images/sublime-text-typewriter-auto-scroll.gif)
 
 Do you get that feeling that you are continually looking at the bottom of your screen?
 

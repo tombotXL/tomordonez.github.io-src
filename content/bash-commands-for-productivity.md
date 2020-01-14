@@ -9,7 +9,7 @@ Summary: Here are some interesting bash commands to run from the shell for produ
 
 Here are some interesting bash commands to run from the shell for productivity.
 
-![Bash Commands for Productivity]({filename}/images/bash-commands-for-productivity.jpg)
+![Bash Commands for Productivity]({static}/images/bash-commands-for-productivity.jpg)
 
 ## Make changes to many directories
 

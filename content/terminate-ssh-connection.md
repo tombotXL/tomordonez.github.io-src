@@ -8,7 +8,7 @@ Status: published
 Summary: Simple shortcut to terminate an SSH connection. Or if the SSH connection is stuck.
 
 
-![Terminate SSH Connection]({filename}/images/terminate-ssh-connection.jpg)
+![Terminate SSH Connection]({static}/images/terminate-ssh-connection.jpg)
 
 I keep forgetting how to terminate an SSH connection when it gets stuck.
 
@@ -21,4 +21,4 @@ This also works if you `vim` or `nano` a file and you come back to the shell and
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

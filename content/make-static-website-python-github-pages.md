@@ -286,9 +286,9 @@ If you want to open the hyperlink in a new tab/window. This cannot be done with 
 
 Use this notation to add images:
 
-    ![exclamation point and bracket for text]({filename}/images/image-file.jpg)
+    ![exclamation point and bracket for text]({static}/images/image-file.jpg)
 
-On the notation above you literally have to put `{filename}`. Then the location of the image, which can be `jpg` or `png`.
+On the notation above you literally have to put `{static}`. Then the location of the image, which can be `jpg` or `png`.
 
 Formatting code, use:
 
@@ -524,7 +524,7 @@ Modify your `pelicanconf.py` file so it looks like this:
 	            }
 	}
 
-Go to your Pelican root directory and create the `robots.txt` file
+Go to your Pelican root directory and create the `robots.txt` file:
 
     env $ vim content/extra/robots.txt
 
@@ -577,3 +577,16 @@ Now deploy the source.
     env $ git commit -m "sitemap, robots, favicon"
 
     env $ git push -u origin master
+
+## Troubleshooting
+
+I recently had issues with my blog when publishing posts. After calling `make html && make publish`. I started getting errors that I was using `{filename}` instead of `{static}`. My mistake. I had the incorrect syntax or perhaps just outdated in multiple posts, when linking to static images inside the `content/images` directory.
+
+    WARNING: {filename} used for linking to staticcontent
+
+Following <a href="https://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line/29191549" target="_blank">this solution</a> to replace a word on multiple files, I ran this:
+
+    $ cd path/to/content folder
+    $ sed -i 's/filename/static/g' *.md
+
+Like magic, it updated all the files with the correct syntax. I also had to run the same command inside `content/pages` for all `.md` files.

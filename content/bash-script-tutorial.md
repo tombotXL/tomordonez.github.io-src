@@ -9,7 +9,7 @@ Summary: In this bash script tutorial you will learn the basics to create bash s
 
 In this bash script tutorial you will learn the basics to create bash scripts.
 
-![Bash Script Tutorial]({filename}/images/bash-script-tutorial.jpg)
+![Bash Script Tutorial]({static}/images/bash-script-tutorial.jpg)
 
 ## Bash Script Environment
 
@@ -174,4 +174,4 @@ The files are copied like this: 2a, 8a, 14a.
 
 ## If you have questions or comments please add them below
 
-![Ask Question or Comment]({filename}/images/tomordonez-ask-question-comment.gif)
+![Ask Question or Comment]({static}/images/tomordonez-ask-question-comment.gif)

@@ -9,7 +9,7 @@ Summary: OBS Studio is an open source software for screen recording. Applicable 
 
 OBS Studio is an open source software for screen recording. Applicable to Windows, MAC and Linux.
 
-![Screen Recording in Linux with OBS Studio]({filename}/images/screen-recording-linux-obs-studio.jpg)
+![Screen Recording in Linux with OBS Studio]({static}/images/screen-recording-linux-obs-studio.jpg)
 
 <a href="https://obsproject.com/" target="_blank">This</a> is the official documentation for OBS Studio.
 
