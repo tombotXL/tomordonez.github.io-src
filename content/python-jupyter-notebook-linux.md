@@ -41,3 +41,12 @@ Run Jupyter Notebook:
 If this doesn't work. Try it like this:
 
     $ jupyter notebook --ip=127.0.0.1
+
+
+## Cell timer for Jupyter notebook
+
+As seen [here](https://stackoverflow.com/questions/32565829/simple-way-to-measure-cell-execution-time-in-ipython-notebook/50384459#50384459)
+
+    $ pip install jupyter_contrib_nbextensions
+    $ jupyter contrib nbextension install --user
+    $ jupyter nbextension enable execute_time/ExecuteTime
